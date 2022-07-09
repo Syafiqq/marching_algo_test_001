@@ -1,3 +1,5 @@
 /.idea
 /objs
 !/objs/.gitkeep
+/dump
+!/dump/.gitkeep
