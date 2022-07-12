@@ -3087,19 +3087,147 @@ def to_points(points, point_type):
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
     elif point_type == 0b10011010:
-        pass
+        # 1 0 0 1   1 0 1 0
+        #
+        #   o     7
+        # o     5
+        #   2     o
+        # o     1
+        #
+        #                   .  7  .
+        #                   4  .  5
+        #                   .  3  .
+        #          .  .  .
+        #          .  .  .
+        #          1  .  2
+        # .  6  .
+        # .  .  .
+        # .  0  .
+        #
+        p0 = __mid_point(points[0], points[1])
+        p1 = __mid_point(points[0], points[2])
+        p2 = __mid_point(points[1], points[3])
+        p3 = __mid_point(points[2], points[3])
+        p4 = __mid_point(points[2], points[6])
+        p5 = __mid_point(points[3], points[7])
+        p6 = __mid_point(points[4], points[5])
+        p7 = __mid_point(points[6], points[7])
+
+        return [p0, p1, p2, p3, p4, p5, p6, p7]
 
     elif point_type == 0b01011010:
-        pass
+        # 0 1 0 1   1 0 1 0
+        #
+        #   o     7
+        # o     5
+        #   2     o
+        # 0     o
+        #
+        #                   .  7  .
+        #                   4  .  5
+        #                   .  1  .
+        #          .  .  .
+        #          .  .  .
+        #          .  .  .
+        # .  6  .
+        # 2  .  3
+        # .  0  .
+        #
+        p0 = __mid_point(points[0], points[1])
+        p1 = __mid_point(points[2], points[3])
+        p2 = __mid_point(points[0], points[4])
+        p3 = __mid_point(points[1], points[5])
+        p4 = __mid_point(points[2], points[6])
+        p5 = __mid_point(points[3], points[7])
+        p6 = __mid_point(points[4], points[5])
+        p7 = __mid_point(points[6], points[7])
+
+        return [p0, p1, p2, p3, p4, p5, p6, p7]
 
     elif point_type == 0b00111010:
-        pass
+        # 0 0 1 1   1 0 1 0
+        #
+        #   o     7
+        # o     5
+        #   o     o
+        # 0     1
+        #
+        #                   .  5  .
+        #                   .  .  3
+        #                   .  .  .
+        #          .  .  .
+        #          .  .  .
+        #          0  .  1
+        # .  4  .
+        # 2  .  .
+        # .  .  .
+        #
+        p0 = __mid_point(points[0], points[2])
+        p1 = __mid_point(points[1], points[3])
+        p2 = __mid_point(points[0], points[4])
+        p3 = __mid_point(points[3], points[7])
+        p4 = __mid_point(points[4], points[5])
+        p5 = __mid_point(points[6], points[7])
+
+        return [p0, p1, p2, p3, p4, p5]
 
     elif point_type == 0b11000110:
-        pass
+        # 1 1 0 0   0 1 1 0
+        #
+        #   o     7
+        # 4     o
+        #   2     3
+        # o     o
+        #
+        #                   .  7  .
+        #                   3  .  .
+        #                   .  .  .
+        #          5  .  6
+        #          .  .  .
+        #          0  .  1
+        # .  4  .
+        # 2  .  .
+        # .  .  .
+        #
+        p0 = __mid_point(points[0], points[2])
+        p1 = __mid_point(points[1], points[3])
+        p2 = __mid_point(points[0], points[4])
+        p3 = __mid_point(points[2], points[6])
+        p4 = __mid_point(points[4], points[5])
+        p5 = __mid_point(points[4], points[6])
+        p6 = __mid_point(points[5], points[7])
+        p7 = __mid_point(points[6], points[7])
+
+        return [p0, p1, p2, p3, p4, p5, p6, p7]
 
     elif point_type == 0b10100110:
-        pass
+        # 1 0 1 0   0 1 1 0
+        #
+        #   o     7
+        # 4     o
+        #   o     3
+        # o     1
+        #
+        #                   .  7  .
+        #                   .  .  .
+        #                   .  1  .
+        #          5  .  6
+        #          .  .  .
+        #          .  .  .
+        # .  4  .
+        # 2  .  3
+        # .  0  .
+        #
+        p0 = __mid_point(points[0], points[1])
+        p1 = __mid_point(points[2], points[3])
+        p2 = __mid_point(points[0], points[4])
+        p3 = __mid_point(points[1], points[5])
+        p4 = __mid_point(points[4], points[5])
+        p5 = __mid_point(points[4], points[6])
+        p6 = __mid_point(points[5], points[7])
+        p7 = __mid_point(points[6], points[7])
+
+        return [p0, p1, p2, p3, p4, p5, p6, p7]
 
     elif point_type == 0b01100110:
         pass
@@ -6252,19 +6380,129 @@ def to_faces(p, point_type):
         ]
 
     elif point_type == 0b10011010:
-        pass
+        # 1 0 0 1   1 0 1 0
+        #
+        #   o     7
+        # o     5
+        #   2     o
+        # o     1
+        #
+        #                   .  7  .
+        #                   4  .  5
+        #                   .  3  .
+        #          .  .  .
+        #          .  .  .
+        #          1  .  2
+        # .  6  .
+        # .  .  .
+        # .  0  .
+        #
+        return [
+            4, p[0], p[1], p[7], p[0],
+            4, p[0], p[6], p[7], p[0],
+            4, p[1], p[4], p[7], p[1],
+            4, p[2], p[3], p[5], p[2],
+        ]
 
     elif point_type == 0b01011010:
-        pass
+        # 0 1 0 1   1 0 1 0
+        #
+        #   o     7
+        # o     5
+        #   2     o
+        # 0     o
+        #
+        #                   .  7  .
+        #                   4  .  5
+        #                   .  1  .
+        #          .  .  .
+        #          .  .  .
+        #          .  .  .
+        # .  6  .
+        # 2  .  3
+        # .  0  .
+        #
+        return [
+            4, p[0], p[1], p[3], p[0],
+            4, p[1], p[3], p[5], p[1],
+            4, p[2], p[4], p[6], p[2],
+            4, p[4], p[6], p[7], p[4],
+        ]
 
     elif point_type == 0b00111010:
-        pass
+        # 0 0 1 1   1 0 1 0
+        #
+        #   o     7
+        # o     5
+        #   o     o
+        # 0     1
+        #
+        #                   .  5  .
+        #                   .  .  3
+        #                   .  .  .
+        #          .  .  .
+        #          .  .  .
+        #          0  .  1
+        # .  4  .
+        # 2  .  .
+        # .  .  .
+        #
+        return [
+            4, p[0], p[1], p[2], p[0],
+            4, p[1], p[2], p[5], p[1],
+            4, p[1], p[3], p[5], p[1],
+            4, p[2], p[4], p[5], p[2],
+        ]
 
     elif point_type == 0b11000110:
-        pass
+        # 1 1 0 0   0 1 1 0
+        #
+        #   o     7
+        # 4     o
+        #   2     3
+        # o     o
+        #
+        #                   .  7  .
+        #                   3  .  .
+        #                   .  .  .
+        #          5  .  6
+        #          .  .  .
+        #          0  .  1
+        # .  4  .
+        # 2  .  .
+        # .  .  .
+        #
+        return [
+            4, p[0], p[2], p[4], p[0],
+            4, p[0], p[4], p[6], p[0],
+            4, p[0], p[1], p[6], p[0],
+            4, p[3], p[5], p[7], p[3],
+        ]
 
     elif point_type == 0b10100110:
-        pass
+        # 1 0 1 0   0 1 1 0
+        #
+        #   o     7
+        # 4     o
+        #   o     3
+        # o     1
+        #
+        #                   .  7  .
+        #                   4  .  .
+        #                   .  1  .
+        #          5  .  6
+        #          .  .  .
+        #          .  .  .
+        # .  .  .
+        # 2  .  3
+        # .  0  .
+        #
+        return [
+            4, p[0], p[2], p[5], p[0],
+            4, p[0], p[5], p[7], p[0],
+            4, p[0], p[1], p[7], p[0],
+            4, p[3], p[4], p[6], p[3],
+        ]
 
     elif point_type == 0b01100110:
         pass
