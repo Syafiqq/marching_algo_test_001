@@ -3,7 +3,7 @@ def __mid_point(p1, p2):
     return p1 + pt
 
 
-def to_points(points, point_type):
+def to_points(p, point_type):
     if point_type == 0:
         # 0 0 0 0   0 0 0 0
         #
@@ -42,9 +42,9 @@ def to_points(points, point_type):
         # 2  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[0], points[4])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[0], p[4])
 
         return [p0, p1, p2]
 
@@ -66,9 +66,9 @@ def to_points(points, point_type):
         # .  .  2
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[1], points[5])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[1], p[5])
 
         return [p0, p1, p2]
 
@@ -90,9 +90,9 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[2], points[6])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[2], p[6])
 
         return [p0, p1, p2]
 
@@ -114,9 +114,9 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[3], points[7])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[3], p[7])
 
         return [p0, p1, p2]
 
@@ -138,9 +138,9 @@ def to_points(points, point_type):
         # 0  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[4])
-        p1 = __mid_point(points[4], points[5])
-        p2 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[0], p[4])
+        p1 = __mid_point(p[4], p[5])
+        p2 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2]
 
@@ -162,9 +162,9 @@ def to_points(points, point_type):
         # .  .  0
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[5])
-        p1 = __mid_point(points[4], points[5])
-        p2 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[1], p[5])
+        p1 = __mid_point(p[4], p[5])
+        p2 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2]
 
@@ -186,9 +186,9 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[2], points[6])
-        p1 = __mid_point(points[4], points[6])
-        p2 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[2], p[6])
+        p1 = __mid_point(p[4], p[6])
+        p2 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2]
 
@@ -210,9 +210,9 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[3], points[7])
-        p1 = __mid_point(points[5], points[7])
-        p2 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[3], p[7])
+        p1 = __mid_point(p[5], p[7])
+        p2 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2]
 
@@ -234,10 +234,10 @@ def to_points(points, point_type):
         # 2  .  3
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
 
         return [p0, p1, p2, p3]
 
@@ -259,10 +259,10 @@ def to_points(points, point_type):
         # 2  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[2], points[6])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[2], p[6])
 
         return [p0, p1, p2, p3]
 
@@ -284,12 +284,12 @@ def to_points(points, point_type):
         # .  .  4
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[1], points[5])
-        p5 = __mid_point(points[2], points[6])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[1], p[5])
+        p5 = __mid_point(p[2], p[6])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -311,12 +311,12 @@ def to_points(points, point_type):
         # 4  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[0], points[4])
-        p5 = __mid_point(points[3], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[0], p[4])
+        p5 = __mid_point(p[3], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -338,10 +338,10 @@ def to_points(points, point_type):
         # .  .  2
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[3], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[3], p[7])
 
         return [p0, p1, p2, p3]
 
@@ -363,10 +363,10 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[2], points[6])
-        p3 = __mid_point(points[3], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[2], p[6])
+        p3 = __mid_point(p[3], p[7])
 
         return [p0, p1, p2, p3]
 
@@ -388,10 +388,10 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[4], points[5])
-        p3 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[4], p[5])
+        p3 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3]
 
@@ -413,12 +413,12 @@ def to_points(points, point_type):
         # 2  .  3
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -440,12 +440,12 @@ def to_points(points, point_type):
         # 2  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -467,12 +467,12 @@ def to_points(points, point_type):
         # 2  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -494,12 +494,12 @@ def to_points(points, point_type):
         # 2  .  3
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -521,10 +521,10 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[4], points[5])
-        p3 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[4], p[5])
+        p3 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3]
 
@@ -546,12 +546,12 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -573,12 +573,12 @@ def to_points(points, point_type):
         # .  .  2
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -600,10 +600,10 @@ def to_points(points, point_type):
         # 0  .  1
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[4])
-        p1 = __mid_point(points[1], points[5])
-        p2 = __mid_point(points[4], points[6])
-        p3 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[4])
+        p1 = __mid_point(p[1], p[5])
+        p2 = __mid_point(p[4], p[6])
+        p3 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3]
 
@@ -625,12 +625,12 @@ def to_points(points, point_type):
         # 2  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[4], points[6])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[4], p[6])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -652,12 +652,12 @@ def to_points(points, point_type):
         # .  .  2
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[4], points[6])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[4], p[6])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -679,10 +679,10 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[4], points[6])
-        p3 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[4], p[6])
+        p3 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3]
 
@@ -704,12 +704,12 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[2], points[6])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[4], points[6])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[2], p[6])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[4], p[6])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -731,10 +731,10 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[4])
-        p1 = __mid_point(points[2], points[6])
-        p2 = __mid_point(points[4], points[5])
-        p3 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[4])
+        p1 = __mid_point(p[2], p[6])
+        p2 = __mid_point(p[4], p[5])
+        p3 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3]
 
@@ -756,12 +756,12 @@ def to_points(points, point_type):
         # .  .  0
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[5])
-        p1 = __mid_point(points[2], points[6])
-        p2 = __mid_point(points[4], points[5])
-        p3 = __mid_point(points[4], points[6])
-        p4 = __mid_point(points[5], points[7])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[1], p[5])
+        p1 = __mid_point(p[2], p[6])
+        p2 = __mid_point(p[4], p[5])
+        p3 = __mid_point(p[4], p[6])
+        p4 = __mid_point(p[5], p[7])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -783,12 +783,12 @@ def to_points(points, point_type):
         # 2  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[5], points[7])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[5], p[7])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -810,12 +810,12 @@ def to_points(points, point_type):
         # .  .  2
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[5], points[7])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[5], p[7])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -837,12 +837,12 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[2], points[6])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[5], points[7])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[2], p[6])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[5], p[7])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -864,10 +864,10 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[5], points[7])
-        p3 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[5], p[7])
+        p3 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3]
 
@@ -889,12 +889,12 @@ def to_points(points, point_type):
         # 0  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[4])
-        p1 = __mid_point(points[3], points[7])
-        p2 = __mid_point(points[4], points[5])
-        p3 = __mid_point(points[4], points[6])
-        p4 = __mid_point(points[5], points[7])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[4])
+        p1 = __mid_point(p[3], p[7])
+        p2 = __mid_point(p[4], p[5])
+        p3 = __mid_point(p[4], p[6])
+        p4 = __mid_point(p[5], p[7])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -916,10 +916,10 @@ def to_points(points, point_type):
         # .  .  0
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[5])
-        p1 = __mid_point(points[3], points[7])
-        p2 = __mid_point(points[4], points[5])
-        p3 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[1], p[5])
+        p1 = __mid_point(p[3], p[7])
+        p2 = __mid_point(p[4], p[5])
+        p3 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3]
 
@@ -941,10 +941,10 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[2], points[6])
-        p1 = __mid_point(points[3], points[7])
-        p2 = __mid_point(points[4], points[6])
-        p3 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[2], p[6])
+        p1 = __mid_point(p[3], p[7])
+        p2 = __mid_point(p[4], p[6])
+        p3 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3]
 
@@ -966,11 +966,11 @@ def to_points(points, point_type):
         # 2  .  3
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[2], points[6])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[2], p[6])
 
         return [p0, p1, p2, p3, p4]
 
@@ -992,11 +992,11 @@ def to_points(points, point_type):
         # 2  .  3
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[3], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[3], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -1018,11 +1018,11 @@ def to_points(points, point_type):
         # 2  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[3], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[3], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -1044,11 +1044,11 @@ def to_points(points, point_type):
         # .  .  2
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[3], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[3], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -1070,11 +1070,11 @@ def to_points(points, point_type):
         # .  .  2
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[4], points[5])
-        p4 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[4], p[5])
+        p4 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4]
 
@@ -1096,11 +1096,11 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[2], points[6])
-        p3 = __mid_point(points[4], points[5])
-        p4 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[2], p[6])
+        p3 = __mid_point(p[4], p[5])
+        p4 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4]
 
@@ -1122,15 +1122,15 @@ def to_points(points, point_type):
         # 4  .  5
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[0], points[4])
-        p5 = __mid_point(points[1], points[5])
-        p6 = __mid_point(points[2], points[6])
-        p7 = __mid_point(points[4], points[5])
-        p8 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[0], p[4])
+        p5 = __mid_point(p[1], p[5])
+        p6 = __mid_point(p[2], p[6])
+        p7 = __mid_point(p[4], p[5])
+        p8 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7, p8]
 
@@ -1152,13 +1152,13 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[4], points[5])
-        p6 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[4], p[5])
+        p6 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1180,13 +1180,13 @@ def to_points(points, point_type):
         # 2  .  3
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[3], points[7])
-        p6 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[3], p[7])
+        p6 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1208,13 +1208,13 @@ def to_points(points, point_type):
         # 2  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[4], points[5])
-        p6 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[4], p[5])
+        p6 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1236,11 +1236,11 @@ def to_points(points, point_type):
         # 2  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[4], points[5])
-        p4 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[4], p[5])
+        p4 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -1262,13 +1262,13 @@ def to_points(points, point_type):
         # 2  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[2], points[6])
-        p5 = __mid_point(points[4], points[5])
-        p6 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[2], p[6])
+        p5 = __mid_point(p[4], p[5])
+        p6 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1290,13 +1290,13 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[2], points[6])
-        p5 = __mid_point(points[4], points[5])
-        p6 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[2], p[6])
+        p5 = __mid_point(p[4], p[5])
+        p6 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1318,15 +1318,15 @@ def to_points(points, point_type):
         # 4  .  5
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[0], points[4])
-        p5 = __mid_point(points[1], points[5])
-        p6 = __mid_point(points[3], points[7])
-        p7 = __mid_point(points[4], points[5])
-        p8 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[0], p[4])
+        p5 = __mid_point(p[1], p[5])
+        p6 = __mid_point(p[3], p[7])
+        p7 = __mid_point(p[4], p[5])
+        p8 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7, p8]
 
@@ -1348,11 +1348,11 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[3], points[7])
-        p3 = __mid_point(points[4], points[5])
-        p4 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[3], p[7])
+        p3 = __mid_point(p[4], p[5])
+        p4 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -1374,13 +1374,13 @@ def to_points(points, point_type):
         # .  .  2
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[4], points[5])
-        p6 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[4], p[5])
+        p6 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1402,11 +1402,11 @@ def to_points(points, point_type):
         # .  .  2
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[4], points[6])
-        p4 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[4], p[6])
+        p4 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -1428,11 +1428,11 @@ def to_points(points, point_type):
         # 2  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[4], points[6])
-        p4 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[4], p[6])
+        p4 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -1454,13 +1454,13 @@ def to_points(points, point_type):
         # 2  .  3
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[2], points[6])
-        p5 = __mid_point(points[4], points[6])
-        p6 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[2], p[6])
+        p5 = __mid_point(p[4], p[6])
+        p6 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1482,13 +1482,13 @@ def to_points(points, point_type):
         # 2  .  3
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[4], points[6])
-        p6 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[4], p[6])
+        p6 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1510,13 +1510,13 @@ def to_points(points, point_type):
         # 2  .  3
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[2], points[6])
-        p5 = __mid_point(points[4], points[6])
-        p6 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[2], p[6])
+        p5 = __mid_point(p[4], p[6])
+        p6 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1538,11 +1538,11 @@ def to_points(points, point_type):
         # 2  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[4], points[6])
-        p4 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[4], p[6])
+        p4 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -1564,13 +1564,13 @@ def to_points(points, point_type):
         # .  .  4
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[1], points[5])
-        p5 = __mid_point(points[4], points[6])
-        p6 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[1], p[5])
+        p5 = __mid_point(p[4], p[6])
+        p6 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1592,15 +1592,15 @@ def to_points(points, point_type):
         # 4  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[0], points[4])
-        p5 = __mid_point(points[2], points[6])
-        p6 = __mid_point(points[3], points[7])
-        p7 = __mid_point(points[4], points[6])
-        p8 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[0], p[4])
+        p5 = __mid_point(p[2], p[6])
+        p6 = __mid_point(p[3], p[7])
+        p7 = __mid_point(p[4], p[6])
+        p8 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7, p8]
 
@@ -1622,13 +1622,13 @@ def to_points(points, point_type):
         # .  .  2
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[4], points[6])
-        p6 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[4], p[6])
+        p6 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1650,11 +1650,11 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[3], points[7])
-        p3 = __mid_point(points[4], points[6])
-        p4 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[3], p[7])
+        p3 = __mid_point(p[4], p[6])
+        p4 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -1676,11 +1676,11 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[2], points[6])
-        p3 = __mid_point(points[4], points[5])
-        p4 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[2], p[6])
+        p3 = __mid_point(p[4], p[5])
+        p4 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -1702,13 +1702,13 @@ def to_points(points, point_type):
         # 2  .  3
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[2], points[6])
-        p5 = __mid_point(points[4], points[5])
-        p6 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[2], p[6])
+        p5 = __mid_point(p[4], p[5])
+        p6 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1730,11 +1730,11 @@ def to_points(points, point_type):
         # 2  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[4], points[5])
-        p4 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[4], p[5])
+        p4 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -1756,13 +1756,13 @@ def to_points(points, point_type):
         # 2  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[4], points[5])
-        p6 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[4], p[5])
+        p6 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1784,15 +1784,15 @@ def to_points(points, point_type):
         # 2  .  3
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[2], points[6])
-        p5 = __mid_point(points[4], points[5])
-        p6 = __mid_point(points[4], points[6])
-        p7 = __mid_point(points[5], points[7])
-        p8 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[2], p[6])
+        p5 = __mid_point(p[4], p[5])
+        p6 = __mid_point(p[4], p[6])
+        p7 = __mid_point(p[5], p[7])
+        p8 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7, p8]
 
@@ -1814,13 +1814,13 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[2], points[6])
-        p3 = __mid_point(points[4], points[5])
-        p4 = __mid_point(points[4], points[6])
-        p5 = __mid_point(points[5], points[7])
-        p6 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[2], p[6])
+        p3 = __mid_point(p[4], p[5])
+        p4 = __mid_point(p[4], p[6])
+        p5 = __mid_point(p[5], p[7])
+        p6 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1842,13 +1842,13 @@ def to_points(points, point_type):
         # .  .  2
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[4], points[5])
-        p4 = __mid_point(points[4], points[6])
-        p5 = __mid_point(points[5], points[7])
-        p6 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[4], p[5])
+        p4 = __mid_point(p[4], p[6])
+        p5 = __mid_point(p[5], p[7])
+        p6 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1870,15 +1870,15 @@ def to_points(points, point_type):
         # .  .  2
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[4], points[5])
-        p6 = __mid_point(points[4], points[6])
-        p7 = __mid_point(points[5], points[7])
-        p8 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[4], p[5])
+        p6 = __mid_point(p[4], p[6])
+        p7 = __mid_point(p[5], p[7])
+        p8 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7, p8]
 
@@ -1900,11 +1900,11 @@ def to_points(points, point_type):
         # 0  .  1
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[4])
-        p1 = __mid_point(points[1], points[5])
-        p2 = __mid_point(points[2], points[6])
-        p3 = __mid_point(points[5], points[7])
-        p4 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[4])
+        p1 = __mid_point(p[1], p[5])
+        p2 = __mid_point(p[2], p[6])
+        p3 = __mid_point(p[5], p[7])
+        p4 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -1926,13 +1926,13 @@ def to_points(points, point_type):
         # 2  .  3
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[5], points[7])
-        p6 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[5], p[7])
+        p6 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1954,13 +1954,13 @@ def to_points(points, point_type):
         # 2  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[5], points[7])
-        p6 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[5], p[7])
+        p6 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -1982,15 +1982,15 @@ def to_points(points, point_type):
         # .  .  4
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[1], points[5])
-        p5 = __mid_point(points[2], points[6])
-        p6 = __mid_point(points[3], points[7])
-        p7 = __mid_point(points[5], points[7])
-        p8 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[1], p[5])
+        p5 = __mid_point(p[2], p[6])
+        p6 = __mid_point(p[3], p[7])
+        p7 = __mid_point(p[5], p[7])
+        p8 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7, p8]
 
@@ -2012,13 +2012,13 @@ def to_points(points, point_type):
         # 4  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[0], points[4])
-        p5 = __mid_point(points[5], points[7])
-        p6 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[0], p[4])
+        p5 = __mid_point(p[5], p[7])
+        p6 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -2040,11 +2040,11 @@ def to_points(points, point_type):
         # .  .  2
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[5], points[7])
-        p4 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[5], p[7])
+        p4 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -2066,11 +2066,11 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[2], points[6])
-        p3 = __mid_point(points[5], points[7])
-        p4 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[2], p[6])
+        p3 = __mid_point(p[5], p[7])
+        p4 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -2092,13 +2092,13 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[3], points[7])
-        p3 = __mid_point(points[4], points[5])
-        p4 = __mid_point(points[4], points[6])
-        p5 = __mid_point(points[5], points[7])
-        p6 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[3], p[7])
+        p3 = __mid_point(p[4], p[5])
+        p4 = __mid_point(p[4], p[6])
+        p5 = __mid_point(p[5], p[7])
+        p6 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -2120,15 +2120,15 @@ def to_points(points, point_type):
         # 2  .  3
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[4], points[5])
-        p6 = __mid_point(points[4], points[6])
-        p7 = __mid_point(points[5], points[7])
-        p8 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[4], p[5])
+        p6 = __mid_point(p[4], p[6])
+        p7 = __mid_point(p[5], p[7])
+        p8 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7, p8]
 
@@ -2150,15 +2150,15 @@ def to_points(points, point_type):
         # 2  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[4], points[5])
-        p6 = __mid_point(points[4], points[6])
-        p7 = __mid_point(points[5], points[7])
-        p8 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[4], p[5])
+        p6 = __mid_point(p[4], p[6])
+        p7 = __mid_point(p[5], p[7])
+        p8 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7, p8]
 
@@ -2180,13 +2180,13 @@ def to_points(points, point_type):
         # 2  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[4], points[5])
-        p4 = __mid_point(points[4], points[6])
-        p5 = __mid_point(points[5], points[7])
-        p6 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[4], p[5])
+        p4 = __mid_point(p[4], p[6])
+        p5 = __mid_point(p[5], p[7])
+        p6 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -2208,13 +2208,13 @@ def to_points(points, point_type):
         # 2  .  3
         # .  .0 .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[4], points[5])
-        p6 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[4], p[5])
+        p6 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -2236,11 +2236,11 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[3], points[7])
-        p3 = __mid_point(points[4], points[5])
-        p4 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[3], p[7])
+        p3 = __mid_point(p[4], p[5])
+        p4 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -2262,13 +2262,13 @@ def to_points(points, point_type):
         # .  .  2
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[4], points[5])
-        p6 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[4], p[5])
+        p6 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -2290,11 +2290,11 @@ def to_points(points, point_type):
         # .  .  2
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[4], points[5])
-        p4 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[4], p[5])
+        p4 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -2316,11 +2316,11 @@ def to_points(points, point_type):
         # 0  .  1
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[4])
-        p1 = __mid_point(points[1], points[5])
-        p2 = __mid_point(points[3], points[7])
-        p3 = __mid_point(points[4], points[6])
-        p4 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[4])
+        p1 = __mid_point(p[1], p[5])
+        p2 = __mid_point(p[3], p[7])
+        p3 = __mid_point(p[4], p[6])
+        p4 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -2342,13 +2342,13 @@ def to_points(points, point_type):
         # 2  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[4], points[6])
-        p6 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[4], p[6])
+        p6 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -2370,13 +2370,13 @@ def to_points(points, point_type):
         # .  .  2
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[3], points[7])
-        p5 = __mid_point(points[4], points[6])
-        p6 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[4], p[6])
+        p6 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6]
 
@@ -2398,11 +2398,11 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[3], points[7])
-        p3 = __mid_point(points[4], points[6])
-        p4 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[3], p[7])
+        p3 = __mid_point(p[4], p[6])
+        p4 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -2424,11 +2424,11 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[2], points[6])
-        p3 = __mid_point(points[4], points[6])
-        p4 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[2], p[6])
+        p3 = __mid_point(p[4], p[6])
+        p4 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -2450,11 +2450,11 @@ def to_points(points, point_type):
         # 0  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[4])
-        p1 = __mid_point(points[2], points[6])
-        p2 = __mid_point(points[3], points[7])
-        p3 = __mid_point(points[4], points[5])
-        p4 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[4])
+        p1 = __mid_point(p[2], p[6])
+        p2 = __mid_point(p[3], p[7])
+        p3 = __mid_point(p[4], p[5])
+        p4 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4]
 
@@ -2476,11 +2476,11 @@ def to_points(points, point_type):
         # .  .  0
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[5])
-        p1 = __mid_point(points[2], points[6])
-        p2 = __mid_point(points[3], points[7])
-        p3 = __mid_point(points[4], points[5])
-        p4 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[1], p[5])
+        p1 = __mid_point(p[2], p[6])
+        p2 = __mid_point(p[3], p[7])
+        p3 = __mid_point(p[4], p[5])
+        p4 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4]
 
@@ -2502,10 +2502,10 @@ def to_points(points, point_type):
         # 0  .  1
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[4])
-        p1 = __mid_point(points[1], points[5])
-        p2 = __mid_point(points[2], points[6])
-        p3 = __mid_point(points[3], points[7])
+        p0 = __mid_point(p[0], p[4])
+        p1 = __mid_point(p[1], p[5])
+        p2 = __mid_point(p[2], p[6])
+        p3 = __mid_point(p[3], p[7])
 
         return [p0, p1, p2, p3]
 
@@ -2527,12 +2527,12 @@ def to_points(points, point_type):
         # .  .  2
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -2554,12 +2554,12 @@ def to_points(points, point_type):
         # .  .  2
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -2581,12 +2581,12 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[2], points[6])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[2], p[6])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -2608,14 +2608,14 @@ def to_points(points, point_type):
         # 2  .  3
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[2], points[6])
-        p5 = __mid_point(points[3], points[7])
-        p6 = __mid_point(points[4], points[5])
-        p7 = __mid_point(points[4], points[6])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[2], p[6])
+        p5 = __mid_point(p[3], p[7])
+        p6 = __mid_point(p[4], p[5])
+        p7 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -2637,12 +2637,12 @@ def to_points(points, point_type):
         # 2  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -2664,12 +2664,12 @@ def to_points(points, point_type):
         # 2  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -2691,14 +2691,14 @@ def to_points(points, point_type):
         # 2  .  3
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[2], points[6])
-        p5 = __mid_point(points[3], points[7])
-        p6 = __mid_point(points[4], points[5])
-        p7 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[2], p[6])
+        p5 = __mid_point(p[3], p[7])
+        p6 = __mid_point(p[4], p[5])
+        p7 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -2720,12 +2720,12 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[2], points[6])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[2], p[6])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -2747,10 +2747,10 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[4], points[6])
-        p3 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[4], p[6])
+        p3 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3]
 
@@ -2772,12 +2772,12 @@ def to_points(points, point_type):
         # .  .  2
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[4], points[6])
-        p5 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[4], p[6])
+        p5 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -2799,14 +2799,14 @@ def to_points(points, point_type):
         # 4  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[0], points[4])
-        p5 = __mid_point(points[2], points[6])
-        p6 = __mid_point(points[4], points[6])
-        p7 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[0], p[4])
+        p5 = __mid_point(p[2], p[6])
+        p6 = __mid_point(p[4], p[6])
+        p7 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -2828,14 +2828,14 @@ def to_points(points, point_type):
         # .  .  4
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[1], points[5])
-        p5 = __mid_point(points[3], points[7])
-        p6 = __mid_point(points[4], points[6])
-        p7 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[1], p[5])
+        p5 = __mid_point(p[3], p[7])
+        p6 = __mid_point(p[4], p[6])
+        p7 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -2857,12 +2857,12 @@ def to_points(points, point_type):
         # 2  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[4], points[6])
-        p5 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[4], p[6])
+        p5 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -2884,14 +2884,14 @@ def to_points(points, point_type):
         # 2  .  3
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[2], points[6])
-        p5 = __mid_point(points[3], points[7])
-        p6 = __mid_point(points[4], points[6])
-        p7 = __mid_point(points[5], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[2], p[6])
+        p5 = __mid_point(p[3], p[7])
+        p6 = __mid_point(p[4], p[6])
+        p7 = __mid_point(p[5], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -2913,12 +2913,12 @@ def to_points(points, point_type):
         # 2  .  3
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[4], points[6])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[4], p[6])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -2940,14 +2940,14 @@ def to_points(points, point_type):
         # 2  .  3
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[2], points[6])
-        p5 = __mid_point(points[3], points[7])
-        p6 = __mid_point(points[4], points[6])
-        p7 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[2], p[6])
+        p5 = __mid_point(p[3], p[7])
+        p6 = __mid_point(p[4], p[6])
+        p7 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -2969,12 +2969,12 @@ def to_points(points, point_type):
         # 2  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[4], points[6])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[4], p[6])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -2996,12 +2996,12 @@ def to_points(points, point_type):
         # .  .  2
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[4], points[6])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[4], p[6])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -3023,12 +3023,12 @@ def to_points(points, point_type):
         # .  .  2
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -3050,10 +3050,10 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[4], points[5])
-        p3 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[4], p[5])
+        p3 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3]
 
@@ -3075,14 +3075,14 @@ def to_points(points, point_type):
         # .  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[0], points[4])
-        p5 = __mid_point(points[1], points[5])
-        p6 = __mid_point(points[4], points[5])
-        p7 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[0], p[4])
+        p5 = __mid_point(p[1], p[5])
+        p6 = __mid_point(p[4], p[5])
+        p7 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -3104,14 +3104,14 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[2], points[6])
-        p5 = __mid_point(points[3], points[7])
-        p6 = __mid_point(points[4], points[5])
-        p7 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[2], p[6])
+        p5 = __mid_point(p[3], p[7])
+        p6 = __mid_point(p[4], p[5])
+        p7 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -3133,14 +3133,14 @@ def to_points(points, point_type):
         # 2  .  3
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[2], points[6])
-        p5 = __mid_point(points[3], points[7])
-        p6 = __mid_point(points[4], points[5])
-        p7 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[2], p[6])
+        p5 = __mid_point(p[3], p[7])
+        p6 = __mid_point(p[4], p[5])
+        p7 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -3162,12 +3162,12 @@ def to_points(points, point_type):
         # 2  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -3189,14 +3189,14 @@ def to_points(points, point_type):
         # 2  .  .
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[4], points[6])
-        p6 = __mid_point(points[5], points[7])
-        p7 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[4], p[6])
+        p6 = __mid_point(p[5], p[7])
+        p7 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -3218,14 +3218,14 @@ def to_points(points, point_type):
         # 2  .  3
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[4], points[6])
-        p6 = __mid_point(points[5], points[7])
-        p7 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[4], p[6])
+        p6 = __mid_point(p[5], p[7])
+        p7 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -3247,14 +3247,14 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[4], points[6])
-        p6 = __mid_point(points[5], points[7])
-        p7 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[4], p[6])
+        p6 = __mid_point(p[5], p[7])
+        p7 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -3276,18 +3276,18 @@ def to_points(points, point_type):
         # 4  .  5
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[3])
-        p3 = __mid_point(points[2], points[3])
-        p4 = __mid_point(points[0], points[4])
-        p5 = __mid_point(points[1], points[5])
-        p6 = __mid_point(points[2], points[6])
-        p7 = __mid_point(points[3], points[7])
-        p8 = __mid_point(points[4], points[5])
-        p9 = __mid_point(points[4], points[6])
-        p10 = __mid_point(points[5], points[7])
-        p11 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[3])
+        p3 = __mid_point(p[2], p[3])
+        p4 = __mid_point(p[0], p[4])
+        p5 = __mid_point(p[1], p[5])
+        p6 = __mid_point(p[2], p[6])
+        p7 = __mid_point(p[3], p[7])
+        p8 = __mid_point(p[4], p[5])
+        p9 = __mid_point(p[4], p[6])
+        p10 = __mid_point(p[5], p[7])
+        p11 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11]
 
@@ -3309,14 +3309,14 @@ def to_points(points, point_type):
         # .  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[2], points[6])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[4], points[6])
-        p6 = __mid_point(points[5], points[7])
-        p7 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[2], p[6])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[4], p[6])
+        p6 = __mid_point(p[5], p[7])
+        p7 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -3338,14 +3338,14 @@ def to_points(points, point_type):
         # .  .  2
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[3], points[7])
-        p4 = __mid_point(points[4], points[5])
-        p5 = __mid_point(points[4], points[6])
-        p6 = __mid_point(points[5], points[7])
-        p7 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[4], p[5])
+        p5 = __mid_point(p[4], p[6])
+        p6 = __mid_point(p[5], p[7])
+        p7 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -3367,12 +3367,12 @@ def to_points(points, point_type):
         # .  .  2
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[0], points[2])
-        p2 = __mid_point(points[1], points[5])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[5], points[7])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[0], p[2])
+        p2 = __mid_point(p[1], p[5])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[5], p[7])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -3394,12 +3394,12 @@ def to_points(points, point_type):
         # 1  .  .
         # .  0  .
         #
-        p0 = __mid_point(points[0], points[1])
-        p1 = __mid_point(points[1], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[2], points[6])
-        p4 = __mid_point(points[5], points[7])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[1])
+        p1 = __mid_point(p[1], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[2], p[6])
+        p4 = __mid_point(p[5], p[7])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -3421,12 +3421,12 @@ def to_points(points, point_type):
         # 2  .  3
         # .  .  .
         #
-        p0 = __mid_point(points[0], points[2])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[5], points[7])
-        p5 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[0], p[2])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[5], p[7])
+        p5 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5]
 
@@ -3448,14 +3448,14 @@ def to_points(points, point_type):
         # 2  .  3
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[2], points[6])
-        p5 = __mid_point(points[3], points[7])
-        p6 = __mid_point(points[5], points[7])
-        p7 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[2], p[6])
+        p5 = __mid_point(p[3], p[7])
+        p6 = __mid_point(p[5], p[7])
+        p7 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -3477,14 +3477,14 @@ def to_points(points, point_type):
         # 1  .  2
         # .  .  .
         #
-        p0 = __mid_point(points[1], points[3])
-        p1 = __mid_point(points[2], points[3])
-        p2 = __mid_point(points[0], points[4])
-        p3 = __mid_point(points[1], points[5])
-        p4 = __mid_point(points[2], points[6])
-        p5 = __mid_point(points[3], points[7])
-        p6 = __mid_point(points[5], points[7])
-        p7 = __mid_point(points[6], points[7])
+        p0 = __mid_point(p[1], p[3])
+        p1 = __mid_point(p[2], p[3])
+        p2 = __mid_point(p[0], p[4])
+        p3 = __mid_point(p[1], p[5])
+        p4 = __mid_point(p[2], p[6])
+        p5 = __mid_point(p[3], p[7])
+        p6 = __mid_point(p[5], p[7])
+        p7 = __mid_point(p[6], p[7])
 
         return [p0, p1, p2, p3, p4, p5, p6, p7]
 
@@ -3496,7 +3496,7 @@ def to_points(points, point_type):
         #   2     o
         # o     o
         #
-        return to_points(points, 0b00101110)
+        return to_points(p, 0b00101110)
 
     elif point_type == 0b10110001:
         # 1 0 1 1   0 0 0 1
@@ -3506,7 +3506,7 @@ def to_points(points, point_type):
         #   o     o
         # o     1
         #
-        return to_points(points, 0b01001110)
+        return to_points(p, 0b01001110)
 
     elif point_type == 0b01110001:
         # 0 1 1 1   0 0 0 1
@@ -3516,7 +3516,7 @@ def to_points(points, point_type):
         #   o     o
         # 0     o
         #
-        return to_points(points, 0b10001110)
+        return to_points(p, 0b10001110)
 
     elif point_type == 0b11001001:
         # 0 0 0 0   0 0 0 0
@@ -3526,7 +3526,7 @@ def to_points(points, point_type):
         #   2     3
         # o     o
         #
-        return to_points(points, 0b00110110)
+        return to_points(p, 0b00110110)
 
     elif point_type == 0b10101001:
         # 1 0 1 0   1 0 0 1
@@ -3536,7 +3536,7 @@ def to_points(points, point_type):
         #   o     3
         # o     1
         #
-        return to_points(points, 0b01010110)
+        return to_points(p, 0b01010110)
 
     elif point_type == 0b01101001:
         # 0 1 1 0   1 0 0 1
@@ -3546,7 +3546,7 @@ def to_points(points, point_type):
         #   o     3
         # 0     o
         #
-        return to_points(points, 0b10010110)
+        return to_points(p, 0b10010110)
 
     elif point_type == 0b10011001:
         # 1 0 0 1   1 0 0 1
@@ -3556,7 +3556,7 @@ def to_points(points, point_type):
         #   2     o
         # o     1
         #
-        return to_points(points, 0b01100110)
+        return to_points(p, 0b01100110)
 
     elif point_type == 0b01011001:
         # 0 1 0 1   1 0 0 1
@@ -3566,7 +3566,7 @@ def to_points(points, point_type):
         #   2     o
         # 0     o
         #
-        return to_points(points, 0b10100110)
+        return to_points(p, 0b10100110)
 
     elif point_type == 0b00111001:
         # 0 0 1 1   1 0 0 1
@@ -3576,7 +3576,7 @@ def to_points(points, point_type):
         #   o     o
         # 0     1
         #
-        return to_points(points, 0b11000110)
+        return to_points(p, 0b11000110)
 
     elif point_type == 0b11000101:
         # 1 1 0 0   0 1 0 1
@@ -3586,7 +3586,7 @@ def to_points(points, point_type):
         #   2     3
         # o     o
         #
-        return to_points(points, 0b00111010)
+        return to_points(p, 0b00111010)
 
     elif point_type == 0b10100101:
         # 1 0 1 0   0 1 0 1
@@ -3596,7 +3596,7 @@ def to_points(points, point_type):
         #   o     3
         # o     1
         #
-        return to_points(points, 0b01011010)
+        return to_points(p, 0b01011010)
 
     elif point_type == 0b01100101:
         pass
