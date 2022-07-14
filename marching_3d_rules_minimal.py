@@ -4049,19 +4049,54 @@ def to_points(p, point_type):
         return to_points(p, 0b00001110)
 
     elif point_type == 0b11101001:
-        pass
+        # 1 1 1 0   1 0 0 1
+        #
+        #   6     o
+        # o     5
+        #   o     3
+        # o     o
+        #
+        return to_points(p, 0b00010110)
 
     elif point_type == 0b11011001:
-        pass
+        # 1 1 0 1   1 0 0 1
+        #
+        #   6     o
+        # o     5
+        #   2     o
+        # o     o
+        #
+        return to_points(p, 0b00100110)
 
     elif point_type == 0b10111001:
-        pass
+        # 1 0 1 1   1 0 0 1
+        #
+        #   6     o
+        # o     5
+        #   o     o
+        # o     1
+        #
+        return to_points(p, 0b01000110)
 
     elif point_type == 0b01111001:
-        pass
+        # 0 1 1 1   1 0 0 1
+        #
+        #   6     o
+        # o     5
+        #   o     o
+        # 0     o
+        #
+        return to_points(p, 0b10000110)
 
     elif point_type == 0b11100101:
-        pass
+        # 1 1 1 0   0 1 0 1
+        #
+        #   6     o
+        # 4     o
+        #   o     3
+        # o     o
+        #
+        return to_points(p, 0b00011010)
 
     elif point_type == 0b11010101:
         pass
@@ -8109,19 +8144,54 @@ def to_faces(p, point_type):
         return to_faces(p, 0b00001110)
 
     elif point_type == 0b11101001:
-        pass
+        # 1 1 1 0   1 0 0 1
+        #
+        #   6     o
+        # o     5
+        #   o     3
+        # o     o
+        #
+        return to_faces(p, 0b00010110)
 
     elif point_type == 0b11011001:
-        pass
+        # 1 1 0 1    1 0 0 1
+        #
+        #   6     o
+        # o     5
+        #   2     o
+        # o     o
+        #
+        return to_faces(p, 0b00100110)
 
     elif point_type == 0b10111001:
-        pass
+        # 1 0 1 1   1 0 0 1
+        #
+        #   6     o
+        # o     5
+        #   o     o
+        # o     1
+        #
+        return to_faces(p, 0b01000110)
 
     elif point_type == 0b01111001:
-        pass
+        # 0 1 1 1   1 0 0 1
+        #
+        #   6     o
+        # o     5
+        #   o     o
+        # 0     o
+        #
+        return to_faces(p, 0b10000110)
 
     elif point_type == 0b11100101:
-        pass
+        # 1 1 1 0   0 1 0 1
+        #
+        #   6     o
+        # 4     o
+        #   o     3
+        # o     o
+        #
+        return to_faces(p, 0b00011010)
 
     elif point_type == 0b11010101:
         pass
