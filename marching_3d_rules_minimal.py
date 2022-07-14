@@ -3599,19 +3599,54 @@ def to_points(p, point_type):
         return to_points(p, 0b01011010)
 
     elif point_type == 0b01100101:
-        pass
+        # 0 1 1 0   0 1 0 1
+        #
+        #   6     o
+        # 4     o
+        #   o     3
+        # 0     o
+        #
+        return to_points(p, 0b10011010)
 
     elif point_type == 0b10010101:
-        pass
+        # 1 0 0 1   0 1 0 1
+        #
+        #   6     o
+        # 4     o
+        #   2     o
+        # o     1
+        #
+        return to_points(p, 0b01101010)
 
     elif point_type == 0b01010101:
-        pass
+        # 0 1 0 1   0 1 0 1
+        #
+        #   6     o
+        # 4     o
+        #   2     o
+        # 0     o
+        #
+        return to_points(p, 0b10101010)
 
     elif point_type == 0b00110101:
-        pass
+        # 1 1 0 0   1 0 1 0
+        #
+        #   o     7
+        # o     5
+        #   2     3
+        # o     o
+        #
+        return to_points(p, 0b11001010)
 
     elif point_type == 0b10001101:
-        pass
+        # 1 0 0 0   1 1 0 1
+        #
+        #   6     o
+        # o     o
+        #   2     3
+        # o     1
+        #
+        return to_points(p, 0b01110010)
 
     elif point_type == 0b01001101:
         pass
@@ -7234,19 +7269,77 @@ def to_faces(p, point_type):
         ]
 
     elif point_type == 0b01100101:
-        pass
+        # 0 1 1 0   0 1 0 1
+        #
+        #   6     o
+        # 4     o
+        #   o     3
+        # 0     o
+        #
+        return [
+            4, p[0], p[2], p[5], p[0],
+            4, p[0], p[5], p[7], p[0],
+            4, p[0], p[6], p[7], p[0],
+            4, p[1], p[3], p[4], p[1],
+        ]
 
     elif point_type == 0b10010101:
-        pass
+        # 1 0 0 1   0 1 0 1
+        #
+        #   6     o
+        # 4     o
+        #   2     o
+        # o     1
+        #
+        return [
+            4, p[0], p[1], p[4], p[0],
+            4, p[2], p[3], p[5], p[2],
+            4, p[3], p[5], p[6], p[3],
+            4, p[3], p[6], p[7], p[3],
+        ]
 
     elif point_type == 0b01010101:
-        pass
+        # 0 1 0 1   0 1 0 1
+        #
+        #   6     o
+        # 4     o
+        #   2     o
+        # 0     o
+        #
+        return [
+            4, p[0], p[1], p[2], p[0],
+            4, p[1], p[2], p[3], p[1],
+        ]
 
     elif point_type == 0b00110101:
-        pass
+        # 1 1 0 0   1 0 1 0
+        #
+        #   o     7
+        # o     5
+        #   2     3
+        # o     o
+        #
+        return [
+            4, p[0], p[1], p[2], p[0],
+            4, p[0], p[2], p[5], p[0],
+            4, p[0], p[3], p[5], p[0],
+            4, p[2], p[4], p[5], p[2],
+        ]
 
     elif point_type == 0b10001101:
-        pass
+        # 1 0 0 0   1 1 0 1
+        #
+        #   6     o
+        # o     o
+        #   2     3
+        # o     1
+        #
+        return [
+            4, p[0], p[1], p[2], p[0],
+            4, p[1], p[2], p[5], p[1],
+            4, p[1], p[4], p[5], p[1],
+            4, p[2], p[3], p[5], p[2],
+        ]
 
     elif point_type == 0b01001101:
         pass
