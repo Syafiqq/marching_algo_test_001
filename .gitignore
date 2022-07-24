@@ -3,3 +3,5 @@
 !/objs/.gitkeep
 /dump
 !/dump/.gitkeep
+/images
+!/images/oas-dump/.gitkeep
