@@ -4796,7 +4796,7 @@ def to_faces(p, point_type):
         #
 
         return [
-            4, p[0], p[1], p[2], p[0]
+            3, p[0], p[1], p[2]
         ]
 
     elif point_type == 0b01000000:
@@ -4819,7 +4819,7 @@ def to_faces(p, point_type):
         #
 
         return [
-            4, p[0], p[1], p[2], p[0]
+            3, p[0], p[1], p[2]
         ]
 
     elif point_type == 0b00100000:
@@ -4842,7 +4842,7 @@ def to_faces(p, point_type):
         #
 
         return [
-            4, p[0], p[1], p[2], p[0]
+            3, p[0], p[1], p[2]
         ]
 
     elif point_type == 0b00010000:
@@ -4865,7 +4865,7 @@ def to_faces(p, point_type):
         #
 
         return [
-            4, p[0], p[1], p[2], p[0]
+            3, p[0], p[1], p[2]
         ]
 
     elif point_type == 0b00001000:
@@ -4888,7 +4888,7 @@ def to_faces(p, point_type):
         #
 
         return [
-            4, p[0], p[1], p[2], p[0]
+            3, p[0], p[1], p[2]
         ]
 
     elif point_type == 0b00000100:
@@ -4911,7 +4911,7 @@ def to_faces(p, point_type):
         #
 
         return [
-            4, p[0], p[1], p[2], p[0]
+            3, p[0], p[1], p[2]
         ]
 
     elif point_type == 0b00000010:
@@ -4934,7 +4934,7 @@ def to_faces(p, point_type):
         #
 
         return [
-            4, p[0], p[1], p[2], p[0]
+            3, p[0], p[1], p[2]
         ]
 
     elif point_type == 0b00000001:
@@ -4957,7 +4957,7 @@ def to_faces(p, point_type):
         #
 
         return [
-            4, p[0], p[1], p[2], p[0]
+            3, p[0], p[1], p[2]
         ]
 
     elif point_type == 0b11000000:
@@ -4979,8 +4979,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1]
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3]
         ]
 
     elif point_type == 0b10100000:
@@ -5002,8 +5002,8 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1]
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3]
         ]
 
     elif point_type == 0b01100000:
@@ -5025,8 +5025,8 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[2], p[4], p[0],
-            4, p[1], p[3], p[5], p[1],
+            3, p[0], p[2], p[4],
+            3, p[1], p[3], p[5],
         ]
 
     elif point_type == 0b10010000:
@@ -5049,8 +5049,8 @@ def to_faces(p, point_type):
         #
 
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[2], p[3], p[5], p[2],
+            3, p[0], p[1], p[4],
+            3, p[2], p[3], p[5],
         ]
 
     elif point_type == 0b01010000:
@@ -5073,8 +5073,8 @@ def to_faces(p, point_type):
         #
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b00110000:
@@ -5097,8 +5097,8 @@ def to_faces(p, point_type):
         #
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b10001000:
@@ -5120,8 +5120,8 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b01001000:
@@ -5143,8 +5143,8 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[2], p[4], p[5], p[2],
+            3, p[0], p[1], p[3],
+            3, p[2], p[4], p[5],
         ]
 
     elif point_type == 0b00101000:
@@ -5166,8 +5166,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[2], p[4], p[5], p[2],
+            3, p[0], p[1], p[3],
+            3, p[2], p[4], p[5],
         ]
 
     elif point_type == 0b00011000:
@@ -5189,8 +5189,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[2], p[4], p[5], p[2],
+            3, p[0], p[1], p[3],
+            3, p[2], p[4], p[5],
         ]
 
     elif point_type == 0b10000100:
@@ -5212,8 +5212,8 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[2],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b01000100:
@@ -5235,8 +5235,8 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b00100100:
@@ -5258,8 +5258,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[2], p[4], p[5], p[2],
+            3, p[0], p[1], p[3],
+            3, p[2], p[4], p[5],
         ]
 
     elif point_type == 0b00010100:
@@ -5281,8 +5281,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[2], p[4], p[5], p[2],
+            3, p[0], p[1], p[3],
+            3, p[2], p[4], p[5],
         ]
 
     elif point_type == 0b00001100:
@@ -5304,8 +5304,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b10000010:
@@ -5327,8 +5327,8 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[2],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b01000010:
@@ -5350,8 +5350,8 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[2],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b00100010:
@@ -5373,8 +5373,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b00010010:
@@ -5396,8 +5396,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[2], p[4], p[5], p[2],
+            3, p[0], p[1], p[3],
+            3, p[2], p[4], p[5],
         ]
 
     elif point_type == 0b00001010:
@@ -5419,8 +5419,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b00000110:
@@ -5442,8 +5442,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[2], p[4], p[0],
-            4, p[1], p[3], p[5], p[1],
+            3, p[0], p[2], p[4],
+            3, p[1], p[3], p[5],
         ]
 
     elif point_type == 0b10000001:
@@ -5465,8 +5465,8 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[2],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b01000001:
@@ -5488,8 +5488,8 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[2],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b00100001:
@@ -5511,8 +5511,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[2],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b00010001:
@@ -5534,8 +5534,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b00001001:
@@ -5557,8 +5557,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[2], p[3], p[0],
-            4, p[1], p[4], p[5], p[1],
+            3, p[0], p[2], p[3],
+            3, p[1], p[4], p[5],
         ]
 
     elif point_type == 0b00000101:
@@ -5580,8 +5580,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b00000011:
@@ -5603,8 +5603,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b11100000:
@@ -5626,9 +5626,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[0], p[4], p[3], p[0],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[4],
+            3, p[0], p[4], p[3],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b11010000:
@@ -5650,9 +5650,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[0], p[4], p[2], p[0],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[4],
+            3, p[0], p[4], p[2],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b10110000:
@@ -5674,9 +5674,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[0], p[4], p[2], p[0],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[4],
+            3, p[0], p[4], p[2],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b01110000:
@@ -5698,9 +5698,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[0], p[3], p[2], p[0],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[3],
+            3, p[0], p[3], p[2],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b11001000:
@@ -5722,9 +5722,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[1], p[2], p[3], p[1],
-            4, p[1], p[3], p[4], p[1],
+            3, p[0], p[1], p[4],
+            3, p[1], p[2], p[3],
+            3, p[1], p[3], p[4],
         ]
 
     elif point_type == 0b10101000:
@@ -5746,9 +5746,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[2], p[3], p[1], p[2],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[3],
+            3, p[2], p[3], p[1],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b01101000:
@@ -5769,9 +5769,9 @@ def to_faces(p, point_type):
         # 4  .  5
         # .  0  .
         return [
-            4, p[0], p[2], p[5], p[0],
-            4, p[1], p[3], p[6], p[1],
-            4, p[4], p[7], p[8], p[4],
+            3, p[0], p[2], p[5],
+            3, p[1], p[3], p[6],
+            3, p[4], p[7], p[8],
         ]
 
     elif point_type == 0b10011000:
@@ -5793,9 +5793,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[5], p[0],
-            4, p[1], p[5], p[6], p[1],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[5],
+            3, p[1], p[5], p[6],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b01011000:
@@ -5817,9 +5817,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[1], p[3], p[5], p[1],
-            4, p[2], p[4], p[6], p[2],
+            3, p[0], p[1], p[3],
+            3, p[1], p[3], p[5],
+            3, p[2], p[4], p[6],
         ]
 
     elif point_type == 0b00111000:
@@ -5841,9 +5841,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[1], p[3], p[4], p[1],
-            4, p[2], p[5], p[6], p[2],
+            3, p[0], p[1], p[3],
+            3, p[1], p[3], p[4],
+            3, p[2], p[5], p[6],
         ]
 
     elif point_type == 0b11000100:
@@ -5865,9 +5865,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[0], p[2], p[3], p[0],
-            4, p[0], p[3], p[4], p[0],
+            3, p[0], p[1], p[4],
+            3, p[0], p[2], p[3],
+            3, p[0], p[3], p[4],
         ]
 
     elif point_type == 0b10100100:
@@ -5889,9 +5889,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[4], p[1],
-            4, p[3], p[5], p[6], p[3],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[4],
+            3, p[3], p[5], p[6],
         ]
 
     elif point_type == 0b01100100:
@@ -5913,9 +5913,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[2], p[5], p[0],
-            4, p[2], p[5], p[6], p[2],
-            4, p[1], p[3], p[4], p[1],
+            3, p[0], p[2], p[5],
+            3, p[2], p[5], p[6],
+            3, p[1], p[3], p[4],
         ]
 
     elif point_type == 0b10010100:
@@ -5937,9 +5937,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[2], p[3], p[6], p[2],
-            4, p[5], p[7], p[8], p[5],
+            3, p[0], p[1], p[4],
+            3, p[2], p[3], p[6],
+            3, p[5], p[7], p[8],
         ]
 
     elif point_type == 0b01010100:
@@ -5961,9 +5961,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[1], p[2], p[3], p[1],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[3],
+            3, p[1], p[2], p[3],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b00110100:
@@ -5985,9 +5985,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[1], p[3], p[4], p[1],
-            4, p[2], p[5], p[6], p[2],
+            3, p[0], p[1], p[3],
+            3, p[1], p[3], p[4],
+            3, p[2], p[5], p[6],
         ]
 
     elif point_type == 0b10001100:
@@ -6009,9 +6009,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[4], p[1],
-            4, p[1], p[3], p[4], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[4],
+            3, p[1], p[3], p[4],
         ]
 
     elif point_type == 0b01001100:
@@ -6033,9 +6033,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
-            4, p[1], p[3], p[4], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
+            3, p[1], p[3], p[4],
         ]
 
     elif point_type == 0b00101100:
@@ -6057,9 +6057,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[2], p[3], p[5], p[2],
-            4, p[3], p[5], p[6], p[3],
+            3, p[0], p[1], p[4],
+            3, p[2], p[3], p[5],
+            3, p[3], p[5], p[6],
         ]
 
     elif point_type == 0b00011100:
@@ -6081,9 +6081,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[2], p[3], p[5], p[2],
-            4, p[3], p[5], p[6], p[3],
+            3, p[0], p[1], p[4],
+            3, p[2], p[3], p[5],
+            3, p[3], p[5], p[6],
         ]
 
     elif point_type == 0b11000010:
@@ -6105,9 +6105,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
-            4, p[4], p[5], p[6], p[4],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
+            3, p[4], p[5], p[6],
         ]
 
     elif point_type == 0b10100010:
@@ -6129,9 +6129,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[0], p[2], p[4], p[0],
-            4, p[2], p[3], p[4], p[3],
+            3, p[0], p[1], p[4],
+            3, p[0], p[2], p[4],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b01100010:
@@ -6153,9 +6153,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[2], p[4], p[0],
-            4, p[1], p[3], p[6], p[1],
-            4, p[1], p[5], p[6], p[1],
+            3, p[0], p[2], p[4],
+            3, p[1], p[3], p[6],
+            3, p[1], p[5], p[6],
         ]
 
     elif point_type == 0b10010010:
@@ -6177,9 +6177,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[2], p[3], p[6], p[2],
-            4, p[5], p[7], p[8], p[5],
+            3, p[0], p[1], p[4],
+            3, p[2], p[3], p[6],
+            3, p[5], p[7], p[8],
         ]
 
     elif point_type == 0b01010010:
@@ -6201,9 +6201,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[4], p[1],
-            4, p[3], p[5], p[6], p[3],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[4],
+            3, p[3], p[5], p[6],
         ]
 
     elif point_type == 0b00110010:
@@ -6225,9 +6225,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[1], p[2], p[3], p[1],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[3],
+            3, p[1], p[2], p[3],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b10001010:
@@ -6249,9 +6249,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[1], p[2], p[4], p[1],
-            4, p[0], p[3], p[4], p[0],
+            3, p[0], p[1], p[4],
+            3, p[1], p[2], p[4],
+            3, p[0], p[3], p[4],
         ]
 
     elif point_type == 0b01001010:
@@ -6273,9 +6273,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[2], p[4], p[5], p[2],
-            4, p[4], p[5], p[6], p[4],
+            3, p[0], p[1], p[3],
+            3, p[2], p[4], p[5],
+            3, p[4], p[5], p[6],
         ]
 
     elif point_type == 0b00101010:
@@ -6297,9 +6297,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
-            4, p[1], p[3], p[4], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
+            3, p[1], p[3], p[4],
         ]
 
     elif point_type == 0b00011010:
@@ -6321,9 +6321,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[2], p[3], p[5], p[2],
-            4, p[3], p[5], p[6], p[3],
+            3, p[0], p[1], p[4],
+            3, p[2], p[3], p[5],
+            3, p[3], p[5], p[6],
         ]
 
     elif point_type == 0b10000110:
@@ -6345,9 +6345,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[3], p[5], p[7], p[3],
-            4, p[4], p[6], p[8], p[4],
+            3, p[0], p[1], p[2],
+            3, p[3], p[5], p[7],
+            3, p[4], p[6], p[8],
         ]
 
     elif point_type == 0b01000110:
@@ -6369,9 +6369,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[1], p[3], p[5], p[1],
-            4, p[2], p[4], p[6], p[2],
+            3, p[0], p[1], p[3],
+            3, p[1], p[3], p[5],
+            3, p[2], p[4], p[6],
         ]
 
     elif point_type == 0b00100110:
@@ -6393,9 +6393,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[1], p[4], p[6], p[1],
-            4, p[2], p[3], p[5], p[2],
+            3, p[0], p[1], p[4],
+            3, p[1], p[4], p[6],
+            3, p[2], p[3], p[5],
         ]
 
     elif point_type == 0b00010110:
@@ -6417,9 +6417,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[2], p[5], p[7], p[2],
-            4, p[3], p[6], p[8], p[3],
+            3, p[0], p[1], p[4],
+            3, p[2], p[5], p[7],
+            3, p[3], p[6], p[8],
         ]
 
     elif point_type == 0b00001110:
@@ -6441,9 +6441,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b11000001:
@@ -6465,9 +6465,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
-            4, p[4], p[5], p[6], p[4],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
+            3, p[4], p[5], p[6],
         ]
 
     elif point_type == 0b10100001:
@@ -6489,9 +6489,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
-            4, p[4], p[5], p[6], p[4],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
+            3, p[4], p[5], p[6],
         ]
 
     elif point_type == 0b01100001:
@@ -6513,9 +6513,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[2], p[4], p[0],
-            4, p[1], p[3], p[5], p[1],
-            4, p[6], p[7], p[8], p[6],
+            3, p[0], p[2], p[4],
+            3, p[1], p[3], p[5],
+            3, p[6], p[7], p[8],
         ]
 
     elif point_type == 0b10010001:
@@ -6537,9 +6537,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[2], p[3], p[5], p[2],
-            4, p[3], p[5], p[6], p[3],
+            3, p[0], p[1], p[4],
+            3, p[2], p[3], p[5],
+            3, p[3], p[5], p[6],
         ]
 
     elif point_type == 0b01010001:
@@ -6561,9 +6561,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[0], p[2], p[4], p[0],
-            4, p[2], p[4], p[3], p[2],
+            3, p[0], p[1], p[4],
+            3, p[0], p[2], p[4],
+            3, p[2], p[4], p[3],
         ]
 
     elif point_type == 0b00110001:
@@ -6585,9 +6585,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[0], p[2], p[3], p[0],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[3],
+            3, p[0], p[2], p[3],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b10001001:
@@ -6609,9 +6609,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[1], p[3], p[4], p[1],
-            4, p[2], p[5], p[6], p[2],
+            3, p[0], p[1], p[3],
+            3, p[1], p[3], p[4],
+            3, p[2], p[5], p[6],
         ]
 
     elif point_type == 0b01001001:
@@ -6633,9 +6633,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[2], p[5], p[6], p[2],
-            4, p[4], p[7], p[8], p[4],
+            3, p[0], p[1], p[3],
+            3, p[2], p[5], p[6],
+            3, p[4], p[7], p[8],
         ]
 
     elif point_type == 0b00101001:
@@ -6657,9 +6657,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[2], p[5], p[6], p[2],
-            4, p[4], p[7], p[8], p[4],
+            3, p[0], p[1], p[3],
+            3, p[2], p[5], p[6],
+            3, p[4], p[7], p[8],
         ]
 
     elif point_type == 0b00011001:
@@ -6681,9 +6681,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[5], p[0],
-            4, p[1], p[5], p[6], p[1],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[5],
+            3, p[1], p[5], p[6],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b10000101:
@@ -6705,9 +6705,9 @@ def to_faces(p, point_type):
         # .  .0 .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[3], p[4], p[5], p[3],
-            4, p[4], p[5], p[6], p[4],
+            3, p[0], p[1], p[2],
+            3, p[3], p[4], p[5],
+            3, p[4], p[5], p[6],
         ]
 
     elif point_type == 0b01000101:
@@ -6729,9 +6729,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[0], p[2], p[4], p[0],
-            4, p[0], p[3], p[4], p[0],
+            3, p[0], p[1], p[2],
+            3, p[0], p[2], p[4],
+            3, p[0], p[3], p[4],
         ]
 
     elif point_type == 0b00100101:
@@ -6753,9 +6753,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[2], p[4], p[5], p[2],
-            4, p[4], p[5], p[6], p[4],
+            3, p[0], p[1], p[3],
+            3, p[2], p[4], p[5],
+            3, p[4], p[5], p[6],
         ]
 
     elif point_type == 0b00010101:
@@ -6777,9 +6777,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[0], p[2], p[3], p[0],
-            4, p[1], p[3], p[4], p[1],
+            3, p[0], p[1], p[3],
+            3, p[0], p[2], p[3],
+            3, p[1], p[3], p[4],
         ]
 
     elif point_type == 0b00001101:
@@ -6801,9 +6801,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[0], p[2], p[3], p[0],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[2],
+            3, p[0], p[2], p[3],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b10000011:
@@ -6825,9 +6825,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[3], p[4], p[5], p[3],
-            4, p[4], p[5], p[6], p[4],
+            3, p[0], p[1], p[2],
+            3, p[3], p[4], p[5],
+            3, p[4], p[5], p[6],
         ]
 
     elif point_type == 0b01000011:
@@ -6849,9 +6849,9 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[3], p[4], p[5], p[3],
-            4, p[4], p[5], p[6], p[4],
+            3, p[0], p[1], p[2],
+            3, p[3], p[4], p[5],
+            3, p[4], p[5], p[6],
         ]
 
     elif point_type == 0b00100011:
@@ -6873,9 +6873,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[0], p[2], p[4], p[0],
-            4, p[0], p[3], p[4], p[0],
+            3, p[0], p[1], p[2],
+            3, p[0], p[2], p[4],
+            3, p[0], p[3], p[4],
         ]
 
     elif point_type == 0b00010011:
@@ -6897,9 +6897,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[0], p[2], p[3], p[0],
-            4, p[0], p[3], p[4], p[0],
+            3, p[0], p[1], p[2],
+            3, p[0], p[2], p[3],
+            3, p[0], p[3], p[4],
         ]
 
     elif point_type == 0b00001011:
@@ -6921,9 +6921,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[0], p[2], p[3], p[0],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[2],
+            3, p[0], p[2], p[3],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b00000111:
@@ -6945,9 +6945,9 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[0], p[1], p[3], p[0],
-            4, p[1], p[3], p[4], p[1],
+            3, p[0], p[1], p[2],
+            3, p[0], p[1], p[3],
+            3, p[1], p[3], p[4],
         ]
 
     elif point_type == 0b11110000:
@@ -6969,8 +6969,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b11101000:
@@ -6992,10 +6992,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[4], p[1],
-            4, p[1], p[3], p[4], p[1],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[4],
+            3, p[1], p[3], p[4],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b11011000:
@@ -7017,10 +7017,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[5], p[0],
-            4, p[1], p[2], p[5], p[1],
-            4, p[1], p[2], p[3], p[1],
-            4, p[2], p[4], p[5], p[2],
+            3, p[0], p[1], p[5],
+            3, p[1], p[2], p[5],
+            3, p[1], p[2], p[3],
+            3, p[2], p[4], p[5],
         ]
 
     elif point_type == 0b10111000:
@@ -7042,10 +7042,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[1], p[2], p[3], p[1],
-            4, p[1], p[2], p[4], p[1],
-            4, p[2], p[4], p[5], p[2],
+            3, p[0], p[1], p[4],
+            3, p[1], p[2], p[3],
+            3, p[1], p[2], p[4],
+            3, p[2], p[4], p[5],
         ]
 
     elif point_type == 0b01111000:
@@ -7067,10 +7067,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[0], p[3], p[4], p[0],
-            4, p[2], p[6], p[7], p[2],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[4],
+            3, p[0], p[3], p[4],
+            3, p[2], p[6], p[7],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b11100100:
@@ -7091,10 +7091,10 @@ def to_faces(p, point_type):
         # 2  .  .
         # .  .  .
         return [
-            4, p[0], p[1], p[5], p[0],
-            4, p[1], p[2], p[5], p[1],
-            4, p[1], p[2], p[3], p[1],
-            4, p[2], p[4], p[5], p[2],
+            3, p[0], p[1], p[5],
+            3, p[1], p[2], p[5],
+            3, p[1], p[2], p[3],
+            3, p[2], p[4], p[5],
         ]
 
     elif point_type == 0b11010100:
@@ -7116,10 +7116,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[0], p[2], p[4], p[0],
-            4, p[1], p[4], p[5], p[1],
-            4, p[1], p[3], p[5], p[1],
+            3, p[0], p[1], p[4],
+            3, p[0], p[2], p[4],
+            3, p[1], p[4], p[5],
+            3, p[1], p[3], p[5],
         ]
 
     elif point_type == 0b10110100:
@@ -7141,10 +7141,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[5], p[1],
-            4, p[2], p[4], p[5], p[2],
-            4, p[3], p[6], p[7], p[3],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[5],
+            3, p[2], p[4], p[5],
+            3, p[3], p[6], p[7],
         ]
 
     elif point_type == 0b01110100:
@@ -7166,10 +7166,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[1], p[2], p[3], p[1],
-            4, p[1], p[3], p[4], p[1],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[4],
+            3, p[1], p[2], p[3],
+            3, p[1], p[3], p[4],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b11001100:
@@ -7191,8 +7191,8 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b10101100:
@@ -7214,10 +7214,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[4], p[1],
-            4, p[1], p[3], p[4], p[1],
-            4, p[2], p[4], p[5], p[2],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[4],
+            3, p[1], p[3], p[4],
+            3, p[2], p[4], p[5],
         ]
 
     elif point_type == 0b01101100:
@@ -7239,10 +7239,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[4], p[6], p[0],
-            4, p[0], p[2], p[6], p[0],
-            4, p[1], p[3], p[5], p[1],
-            4, p[2], p[6], p[7], p[2],
+            3, p[0], p[4], p[6],
+            3, p[0], p[2], p[6],
+            3, p[1], p[3], p[5],
+            3, p[2], p[6], p[7],
         ]
 
     elif point_type == 0b10011100:
@@ -7264,10 +7264,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[1], p[4], p[7], p[1],
-            4, p[2], p[3], p[5], p[2],
-            4, p[1], p[6], p[7], p[1],
+            3, p[0], p[1], p[4],
+            3, p[1], p[4], p[7],
+            3, p[2], p[3], p[5],
+            3, p[1], p[6], p[7],
         ]
 
     elif point_type == 0b01011100:
@@ -7289,10 +7289,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[5], p[1],
-            4, p[1], p[3], p[5], p[1],
-            4, p[2], p[4], p[5], p[2],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[5],
+            3, p[1], p[3], p[5],
+            3, p[2], p[4], p[5],
         ]
 
     elif point_type == 0b00111100:
@@ -7314,10 +7314,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[1], p[4], p[5], p[1],
-            4, p[2], p[3], p[6], p[2],
-            4, p[3], p[6], p[7], p[3],
+            3, p[0], p[1], p[4],
+            3, p[1], p[4], p[5],
+            3, p[2], p[3], p[6],
+            3, p[3], p[6], p[7],
         ]
 
     elif point_type == 0b11100010:
@@ -7339,10 +7339,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[2], p[3], p[0],
-            4, p[0], p[1], p[5], p[0],
-            4, p[0], p[2], p[5], p[0],
-            4, p[2], p[4], p[5], p[2],
+            3, p[0], p[2], p[3],
+            3, p[0], p[1], p[5],
+            3, p[0], p[2], p[5],
+            3, p[2], p[4], p[5],
         ]
 
     elif point_type == 0b11010010:
@@ -7364,10 +7364,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[5], p[1],
-            4, p[2], p[3], p[5], p[2],
-            4, p[4], p[6], p[7], p[4],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[5],
+            3, p[2], p[3], p[5],
+            3, p[4], p[6], p[7],
         ]
 
     elif point_type == 0b10110010:
@@ -7389,10 +7389,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[0], p[2], p[4], p[0],
-            4, p[1], p[4], p[5], p[1],
-            4, p[1], p[3], p[5], p[1],
+            3, p[0], p[1], p[4],
+            3, p[0], p[2], p[4],
+            3, p[1], p[4], p[5],
+            3, p[1], p[3], p[5],
         ]
 
     elif point_type == 0b01110010:
@@ -7414,10 +7414,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[0], p[2], p[3], p[0],
-            4, p[0], p[3], p[4], p[0],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[4],
+            3, p[0], p[2], p[3],
+            3, p[0], p[3], p[4],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b11001010:
@@ -7439,10 +7439,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[1], p[2], p[4], p[1],
-            4, p[1], p[3], p[4], p[1],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[3],
+            3, p[1], p[2], p[4],
+            3, p[1], p[3], p[4],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b10101010:
@@ -7464,8 +7464,8 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b01101010:
@@ -7487,10 +7487,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[2], p[5], p[0],
-            4, p[1], p[3], p[4], p[1],
-            4, p[3], p[4], p[6], p[4],
-            4, p[3], p[6], p[7], p[3],
+            3, p[0], p[2], p[5],
+            3, p[1], p[3], p[4],
+            3, p[3], p[4], p[6],
+            3, p[3], p[6], p[7],
         ]
 
     elif point_type == 0b10011010:
@@ -7512,10 +7512,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[7], p[0],
-            4, p[0], p[6], p[7], p[0],
-            4, p[1], p[4], p[7], p[1],
-            4, p[2], p[3], p[5], p[2],
+            3, p[0], p[1], p[7],
+            3, p[0], p[6], p[7],
+            3, p[1], p[4], p[7],
+            3, p[2], p[3], p[5],
         ]
 
     elif point_type == 0b01011010:
@@ -7537,10 +7537,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[1], p[3], p[5], p[1],
-            4, p[2], p[4], p[6], p[2],
-            4, p[4], p[6], p[7], p[4],
+            3, p[0], p[1], p[3],
+            3, p[1], p[3], p[5],
+            3, p[2], p[4], p[6],
+            3, p[4], p[6], p[7],
         ]
 
     elif point_type == 0b00111010:
@@ -7562,10 +7562,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[5], p[1],
-            4, p[1], p[3], p[5], p[1],
-            4, p[2], p[4], p[5], p[2],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[5],
+            3, p[1], p[3], p[5],
+            3, p[2], p[4], p[5],
         ]
 
     elif point_type == 0b11000110:
@@ -7587,10 +7587,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[2], p[4], p[0],
-            4, p[0], p[4], p[6], p[0],
-            4, p[0], p[1], p[6], p[0],
-            4, p[3], p[5], p[7], p[3],
+            3, p[0], p[2], p[4],
+            3, p[0], p[4], p[6],
+            3, p[0], p[1], p[6],
+            3, p[3], p[5], p[7],
         ]
 
     elif point_type == 0b10100110:
@@ -7612,10 +7612,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[2], p[5], p[0],
-            4, p[0], p[5], p[7], p[0],
-            4, p[0], p[1], p[7], p[0],
-            4, p[3], p[4], p[6], p[3],
+            3, p[0], p[2], p[5],
+            3, p[0], p[5], p[7],
+            3, p[0], p[1], p[7],
+            3, p[3], p[4], p[6],
         ]
 
     elif point_type == 0b01100110:
@@ -7637,10 +7637,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[2], p[4], p[0],
-            4, p[1], p[3], p[5], p[1],
-            4, p[2], p[4], p[6], p[2],
-            4, p[3], p[5], p[7], p[3],
+            3, p[0], p[2], p[4],
+            3, p[1], p[3], p[5],
+            3, p[2], p[4], p[6],
+            3, p[3], p[5], p[7],
         ]
 
     elif point_type == 0b10010110:
@@ -7662,10 +7662,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[2], p[3], p[7], p[2],
-            4, p[5], p[8], p[10], p[5],
-            4, p[6], p[9], p[11], p[6],
+            3, p[0], p[1], p[4],
+            3, p[2], p[3], p[7],
+            3, p[5], p[8], p[10],
+            3, p[6], p[9], p[11],
         ]
 
     elif point_type == 0b01010110:
@@ -7687,10 +7687,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[1], p[3], p[4], p[1],
-            4, p[2], p[5], p[7], p[2],
-            4, p[3], p[4], p[6], p[3],
+            3, p[0], p[1], p[4],
+            3, p[1], p[3], p[4],
+            3, p[2], p[5], p[7],
+            3, p[3], p[4], p[6],
         ]
 
     elif point_type == 0b00110110:
@@ -7712,10 +7712,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[5], p[0],
-            4, p[1], p[3], p[5], p[1],
-            4, p[3], p[5], p[7], p[3],
-            4, p[2], p[4], p[6], p[2],
+            3, p[0], p[1], p[5],
+            3, p[1], p[3], p[5],
+            3, p[3], p[5], p[7],
+            3, p[2], p[4], p[6],
         ]
 
     elif point_type == 0b10001110:
@@ -7737,10 +7737,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[4], p[1],
-            4, p[1], p[3], p[4], p[1],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[4],
+            3, p[1], p[3], p[4],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b01001110:
@@ -7762,10 +7762,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[0], p[2], p[3], p[0],
-            4, p[0], p[3], p[4], p[0],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[4],
+            3, p[0], p[2], p[3],
+            3, p[0], p[3], p[4],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b00101110:
@@ -7787,10 +7787,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[2], p[3], p[0],
-            4, p[0], p[1], p[5], p[0],
-            4, p[0], p[3], p[5], p[0],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[2], p[3],
+            3, p[0], p[1], p[5],
+            3, p[0], p[3], p[5],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b00011110:
@@ -7812,10 +7812,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[5], p[0],
-            4, p[2], p[3], p[4], p[2],
-            4, p[3], p[4], p[6], p[3],
-            4, p[4], p[6], p[7], p[4],
+            3, p[0], p[1], p[5],
+            3, p[2], p[3], p[4],
+            3, p[3], p[4], p[6],
+            3, p[4], p[6], p[7],
         ]
 
     elif point_type == 0b11100001:
@@ -7837,10 +7837,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[1], p[3], p[4], p[1],
-            4, p[2], p[3], p[4], p[2],
-            4, p[5], p[6], p[7], p[5],
+            3, p[0], p[1], p[3],
+            3, p[1], p[3], p[4],
+            3, p[2], p[3], p[4],
+            3, p[5], p[6], p[7],
         ]
 
     elif point_type == 0b11010001:
@@ -7862,10 +7862,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[4], p[1],
-            4, p[1], p[5], p[4], p[1],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[4],
+            3, p[1], p[5], p[4],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b10110001:
@@ -7887,10 +7887,10 @@ def to_faces(p, point_type):
         # .  0  .
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[5], p[1],
-            4, p[1], p[4], p[5], p[1],
-            4, p[2], p[3], p[5], p[2],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[5],
+            3, p[1], p[4], p[5],
+            3, p[2], p[3], p[5],
         ]
 
     elif point_type == 0b01110001:
@@ -7902,10 +7902,10 @@ def to_faces(p, point_type):
         # 0     o
         #
         return [
-            4, p[0], p[2], p[4], p[0],
-            4, p[0], p[1], p[5], p[0],
-            4, p[0], p[4], p[5], p[0],
-            4, p[1], p[3], p[5], p[1],
+            3, p[0], p[2], p[4],
+            3, p[0], p[1], p[5],
+            3, p[0], p[4], p[5],
+            3, p[1], p[3], p[5],
         ]
 
     elif point_type == 0b11001001:
@@ -7927,10 +7927,10 @@ def to_faces(p, point_type):
         # .  .  .
         #
         return [
-            4, p[0], p[1], p[5], p[0],
-            4, p[1], p[2], p[4], p[1],
-            4, p[1], p[4], p[5], p[1],
-            4, p[3], p[6], p[7], p[3],
+            3, p[0], p[1], p[5],
+            3, p[1], p[2], p[4],
+            3, p[1], p[4], p[5],
+            3, p[3], p[6], p[7],
         ]
 
     elif point_type == 0b10101001:
@@ -7942,10 +7942,10 @@ def to_faces(p, point_type):
         # o     1
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[1], p[2], p[4], p[1],
-            4, p[2], p[4], p[5], p[2],
-            4, p[3], p[6], p[7], p[3],
+            3, p[0], p[1], p[4],
+            3, p[1], p[2], p[4],
+            3, p[2], p[4], p[5],
+            3, p[3], p[6], p[7],
         ]
 
     elif point_type == 0b01101001:
@@ -7957,10 +7957,10 @@ def to_faces(p, point_type):
         # 0     o
         #
         return [
-            4, p[0], p[2], p[5], p[0],
-            4, p[1], p[3], p[6], p[1],
-            4, p[4], p[8], p[9], p[4],
-            4, p[7], p[10], p[11], p[7],
+            3, p[0], p[2], p[5],
+            3, p[1], p[3], p[6],
+            3, p[4], p[8], p[9],
+            3, p[7], p[10], p[11],
         ]
 
     elif point_type == 0b10011001:
@@ -7972,10 +7972,10 @@ def to_faces(p, point_type):
         # o     1
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[1], p[4], p[5], p[1],
-            4, p[2], p[3], p[6], p[2],
-            4, p[3], p[6], p[7], p[3],
+            3, p[0], p[1], p[4],
+            3, p[1], p[4], p[5],
+            3, p[2], p[3], p[6],
+            3, p[3], p[6], p[7],
         ]
 
     elif point_type == 0b01011001:
@@ -7987,10 +7987,10 @@ def to_faces(p, point_type):
         # 0     o
         #
         return [
-            4, p[0], p[1], p[7], p[0],
-            4, p[0], p[3], p[7], p[0],
-            4, p[2], p[4], p[5], p[2],
-            4, p[3], p[6], p[7], p[3],
+            3, p[0], p[1], p[7],
+            3, p[0], p[3], p[7],
+            3, p[2], p[4], p[5],
+            3, p[3], p[6], p[7],
         ]
 
     elif point_type == 0b00111001:
@@ -8002,10 +8002,10 @@ def to_faces(p, point_type):
         # 0     1
         #
         return [
-            4, p[0], p[1], p[6], p[0],
-            4, p[0], p[3], p[6], p[0],
-            4, p[2], p[4], p[5], p[2],
-            4, p[3], p[6], p[7], p[3],
+            3, p[0], p[1], p[6],
+            3, p[0], p[3], p[6],
+            3, p[2], p[4], p[5],
+            3, p[3], p[6], p[7],
         ]
 
     elif point_type == 0b11000101:
@@ -8017,10 +8017,10 @@ def to_faces(p, point_type):
         # o     o
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[0], p[2], p[4], p[0],
-            4, p[0], p[3], p[4], p[0],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[3],
+            3, p[0], p[2], p[4],
+            3, p[0], p[3], p[4],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b10100101:
@@ -8032,10 +8032,10 @@ def to_faces(p, point_type):
         # o     1
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[0], p[2], p[4], p[0],
-            4, p[3], p[5], p[7], p[3],
-            4, p[3], p[6], p[7], p[3],
+            3, p[0], p[1], p[4],
+            3, p[0], p[2], p[4],
+            3, p[3], p[5], p[7],
+            3, p[3], p[6], p[7],
         ]
 
     elif point_type == 0b01100101:
@@ -8047,10 +8047,10 @@ def to_faces(p, point_type):
         # 0     o
         #
         return [
-            4, p[0], p[2], p[5], p[0],
-            4, p[0], p[5], p[7], p[0],
-            4, p[0], p[6], p[7], p[0],
-            4, p[1], p[3], p[4], p[1],
+            3, p[0], p[2], p[5],
+            3, p[0], p[5], p[7],
+            3, p[0], p[6], p[7],
+            3, p[1], p[3], p[4],
         ]
 
     elif point_type == 0b10010101:
@@ -8062,10 +8062,10 @@ def to_faces(p, point_type):
         # o     1
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[2], p[3], p[5], p[2],
-            4, p[3], p[5], p[6], p[3],
-            4, p[3], p[6], p[7], p[3],
+            3, p[0], p[1], p[4],
+            3, p[2], p[3], p[5],
+            3, p[3], p[5], p[6],
+            3, p[3], p[6], p[7],
         ]
 
     elif point_type == 0b01010101:
@@ -8077,8 +8077,8 @@ def to_faces(p, point_type):
         # 0     o
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b00110101:
@@ -8090,10 +8090,10 @@ def to_faces(p, point_type):
         # o     o
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[0], p[2], p[5], p[0],
-            4, p[0], p[3], p[5], p[0],
-            4, p[2], p[4], p[5], p[2],
+            3, p[0], p[1], p[2],
+            3, p[0], p[2], p[5],
+            3, p[0], p[3], p[5],
+            3, p[2], p[4], p[5],
         ]
 
     elif point_type == 0b10001101:
@@ -8105,10 +8105,10 @@ def to_faces(p, point_type):
         # o     1
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[5], p[1],
-            4, p[1], p[4], p[5], p[1],
-            4, p[2], p[3], p[5], p[2],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[5],
+            3, p[1], p[4], p[5],
+            3, p[2], p[3], p[5],
         ]
 
     elif point_type == 0b01001101:
@@ -8120,10 +8120,10 @@ def to_faces(p, point_type):
         # 0     o
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[0], p[2], p[4], p[0],
-            4, p[1], p[3], p[5], p[1],
-            4, p[1], p[4], p[5], p[1],
+            3, p[0], p[1], p[4],
+            3, p[0], p[2], p[4],
+            3, p[1], p[3], p[5],
+            3, p[1], p[4], p[5],
         ]
 
     elif point_type == 0b00101101:
@@ -8135,10 +8135,10 @@ def to_faces(p, point_type):
         # 0     1
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[2], p[3], p[5], p[2],
-            4, p[2], p[6], p[7], p[2],
-            4, p[2], p[7], p[5], p[2],
+            3, p[0], p[1], p[4],
+            3, p[2], p[3], p[5],
+            3, p[2], p[6], p[7],
+            3, p[2], p[7], p[5],
         ]
 
     elif point_type == 0b00011101:
@@ -8150,10 +8150,10 @@ def to_faces(p, point_type):
         # 0     1
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[1], p[3], p[4], p[1],
-            4, p[1], p[4], p[5], p[1],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[3],
+            3, p[1], p[3], p[4],
+            3, p[1], p[4], p[5],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b11000011:
@@ -8165,10 +8165,10 @@ def to_faces(p, point_type):
         # o     o
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[0], p[2], p[3], p[0],
-            4, p[4], p[5], p[7], p[4],
-            4, p[4], p[6], p[7], p[4],
+            3, p[0], p[1], p[3],
+            3, p[0], p[2], p[3],
+            3, p[4], p[5], p[7],
+            3, p[4], p[6], p[7],
         ]
 
     elif point_type == 0b10100011:
@@ -8180,10 +8180,10 @@ def to_faces(p, point_type):
         # o     1
         #
         return [
-            4, p[0], p[2], p[4], p[0],
-            4, p[0], p[3], p[4], p[0],
-            4, p[0], p[1], p[3], p[0],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[2], p[4],
+            3, p[0], p[3], p[4],
+            3, p[0], p[1], p[3],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b01100011:
@@ -8195,10 +8195,10 @@ def to_faces(p, point_type):
         # 0     o
         #
         return [
-            4, p[0], p[2], p[4], p[0],
-            4, p[1], p[5], p[7], p[1],
-            4, p[1], p[6], p[7], p[1],
-            4, p[1], p[3], p[5], p[1],
+            3, p[0], p[2], p[4],
+            3, p[1], p[5], p[7],
+            3, p[1], p[6], p[7],
+            3, p[1], p[3], p[5],
         ]
 
     elif point_type == 0b10010011:
@@ -8210,10 +8210,10 @@ def to_faces(p, point_type):
         # o     1
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[2], p[3], p[5], p[2],
-            4, p[2], p[5], p[6], p[2],
-            4, p[2], p[6], p[7], p[2],
+            3, p[0], p[1], p[4],
+            3, p[2], p[3], p[5],
+            3, p[2], p[5], p[6],
+            3, p[2], p[6], p[7],
         ]
 
     elif point_type == 0b01010011:
@@ -8225,10 +8225,10 @@ def to_faces(p, point_type):
         # 0     o
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[0], p[2], p[5], p[0],
-            4, p[0], p[3], p[5], p[0],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[3],
+            3, p[0], p[2], p[5],
+            3, p[0], p[3], p[5],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b00110011:
@@ -8240,8 +8240,8 @@ def to_faces(p, point_type):
         # 0     1
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[0], p[2], p[3], p[0],
+            3, p[0], p[1], p[3],
+            3, p[0], p[2], p[3],
         ]
 
     elif point_type == 0b10001011:
@@ -8253,10 +8253,10 @@ def to_faces(p, point_type):
         # o     1
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[0], p[2], p[5], p[0],
-            4, p[0], p[4], p[5], p[0],
-            4, p[2], p[3], p[5], p[2],
+            3, p[0], p[1], p[2],
+            3, p[0], p[2], p[5],
+            3, p[0], p[4], p[5],
+            3, p[2], p[3], p[5],
         ]
 
     elif point_type == 0b01001011:
@@ -8268,10 +8268,10 @@ def to_faces(p, point_type):
         # 0     o
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[2], p[4], p[5], p[2],
-            4, p[2], p[6], p[7], p[2],
-            4, p[2], p[7], p[5], p[2],
+            3, p[0], p[1], p[3],
+            3, p[2], p[4], p[5],
+            3, p[2], p[6], p[7],
+            3, p[2], p[7], p[5],
         ]
 
     elif point_type == 0b00101011:
@@ -8283,10 +8283,10 @@ def to_faces(p, point_type):
         # 0     1
         #
         return [
-            4, p[0], p[1], p[4], p[0],
-            4, p[0], p[2], p[4], p[0],
-            4, p[1], p[3], p[5], p[1],
-            4, p[1], p[4], p[5], p[1],
+            3, p[0], p[1], p[4],
+            3, p[0], p[2], p[4],
+            3, p[1], p[3], p[5],
+            3, p[1], p[4], p[5],
         ]
 
     elif point_type == 0b00011011:
@@ -8298,10 +8298,10 @@ def to_faces(p, point_type):
         # 0     1
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[0], p[3], p[4], p[0],
-            4, p[0], p[4], p[5], p[0],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[1], p[3],
+            3, p[0], p[3], p[4],
+            3, p[0], p[4], p[5],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b10000111:
@@ -8314,10 +8314,10 @@ def to_faces(p, point_type):
         #
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[3], p[4], p[5], p[3],
-            4, p[3], p[4], p[6], p[3],
-            4, p[4], p[6], p[7], p[4],
+            3, p[0], p[1], p[2],
+            3, p[3], p[4], p[5],
+            3, p[3], p[4], p[6],
+            3, p[4], p[6], p[7],
         ]
 
     elif point_type == 0b01000111:
@@ -8329,10 +8329,10 @@ def to_faces(p, point_type):
         # 0     o
         #
         return [
-            4, p[0], p[1], p[3], p[0],
-            4, p[0], p[3], p[5], p[0],
-            4, p[0], p[4], p[5], p[0],
-            4, p[2], p[3], p[5], p[2],
+            3, p[0], p[1], p[3],
+            3, p[0], p[3], p[5],
+            3, p[0], p[4], p[5],
+            3, p[2], p[3], p[5],
         ]
 
     elif point_type == 0b00100111:
@@ -8344,10 +8344,10 @@ def to_faces(p, point_type):
         # 0     1
         #
         return [
-            4, p[0], p[4], p[5], p[0],
-            4, p[0], p[1], p[3], p[0],
-            4, p[0], p[3], p[4], p[0],
-            4, p[2], p[3], p[4], p[2],
+            3, p[0], p[4], p[5],
+            3, p[0], p[1], p[3],
+            3, p[0], p[3], p[4],
+            3, p[2], p[3], p[4],
         ]
 
     elif point_type == 0b00010111:
@@ -8359,10 +8359,10 @@ def to_faces(p, point_type):
         # 0     1
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[4], p[1],
-            4, p[1], p[3], p[4], p[1],
-            4, p[3], p[4], p[5], p[3],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[4],
+            3, p[1], p[3], p[4],
+            3, p[3], p[4], p[5],
         ]
 
     elif point_type == 0b00001111:
@@ -8374,8 +8374,8 @@ def to_faces(p, point_type):
         # 0     1
         #
         return [
-            4, p[0], p[1], p[2], p[0],
-            4, p[1], p[2], p[3], p[1],
+            3, p[0], p[1], p[2],
+            3, p[1], p[2], p[3],
         ]
 
     elif point_type == 0b11111000:
