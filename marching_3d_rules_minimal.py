@@ -4755,7 +4755,7 @@ def to_points(p, point_type, variant=1):
         return []
 
 
-def to_faces(p, point_type):
+def to_faces(p, point_type, variant=1):
     if point_type == 0:
         # 0 0 0 0   0 0 0 0
         #
