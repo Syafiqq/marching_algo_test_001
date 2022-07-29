@@ -8386,7 +8386,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     o
         #
-        return to_faces(p, 0b00000111)
+        return to_faces(p, 0b00000111, variant=variant)
 
     elif point_type == 0b11110100:
         # 1 1 1 1   0 1 0 0
@@ -8396,7 +8396,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     o
         #
-        return to_faces(p, 0b00001011)
+        return to_faces(p, 0b00001011, variant=variant)
 
     elif point_type == 0b11101100:
         # 1 1 1 0 1 1 0 0
@@ -8406,7 +8406,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     o
         #
-        return to_faces(p, 0b00010011)
+        return to_faces(p, 0b00010011, variant=variant)
 
     elif point_type == 0b11011100:
         # 1 1 0 1   1 1 0 0
@@ -8416,7 +8416,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     o
         #
-        return to_faces(p, 0b00100011)
+        return to_faces(p, 0b00100011, variant=variant)
 
     elif point_type == 0b10111100:
         # 1 0 1 1   1 1 0 0
@@ -8426,7 +8426,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     1
         #
-        return to_faces(p, 0b01000011)
+        return to_faces(p, 0b01000011, variant=variant)
 
     elif point_type == 0b01111100:
         # 0 1 1 1   1 1 0 0
@@ -8436,7 +8436,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     o
         #
-        return to_faces(p, 0b10000011)
+        return to_faces(p, 0b10000011, variant=variant)
 
     elif point_type == 0b11110010:
         # 1 1 1 1   0 0 1 0
@@ -8446,7 +8446,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     o
         #
-        return to_faces(p, 0b00001101)
+        return to_faces(p, 0b00001101, variant=variant)
 
     elif point_type == 0b11101010:
         # 1 1 1 0   1 0 1 0
@@ -8456,7 +8456,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     o
         #
-        return to_faces(p, 0b00010101)
+        return to_faces(p, 0b00010101, variant=variant)
 
     elif point_type == 0b11011010:
         # 1 1 0 1   1 0 1 0
@@ -8466,7 +8466,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     o
         #
-        return to_faces(p, 0b00100101)
+        return to_faces(p, 0b00100101, variant=variant)
 
     elif point_type == 0b10111010:
         # 1 0 1 1   1 0 1 0
@@ -8476,7 +8476,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     1
         #
-        return to_faces(p, 0b01000101)
+        return to_faces(p, 0b01000101, variant=variant)
 
     elif point_type == 0b01111010:
         # 0 1 1 1   1 0 1 0
@@ -8486,7 +8486,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     o
         #
-        return to_faces(p, 0b10000101)
+        return to_faces(p, 0b10000101, variant=variant)
 
     elif point_type == 0b11100110:
         # 1 1 1 0   0 1 1 0
@@ -8496,7 +8496,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     o
         #
-        return to_faces(p, 0b00011001)
+        return to_faces(p, 0b00011001, variant=variant)
 
     elif point_type == 0b11010110:
         # 1 1 0 1   0 1 1 0
@@ -8506,7 +8506,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     o
         #
-        return to_faces(p, 0b00101001)
+        return to_faces(p, 0b00101001, variant=variant)
 
     elif point_type == 0b10110110:
         # 1 0 1 1   0 1 1 0
@@ -8516,7 +8516,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     1
         #
-        return to_faces(p, 0b01001001)
+        return to_faces(p, 0b01001001, variant=variant)
 
     elif point_type == 0b01110110:
         # 0 1 1 1   0 1 1 0
@@ -8526,7 +8526,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     o
         #
-        return to_faces(p, 0b10001001)
+        return to_faces(p, 0b10001001, variant=variant)
 
     elif point_type == 0b11001110:
         # 1 1 0 0   1 1 1 0
@@ -8536,7 +8536,7 @@ def to_faces(p, point_type, variant=1):
         #   2     3
         # o     o
         #
-        return to_faces(p, 0b00110001)
+        return to_faces(p, 0b00110001, variant=variant)
 
     elif point_type == 0b10101110:
         # 1 0 1 0   1 1 1 0
@@ -8546,7 +8546,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     1
         #
-        return to_faces(p, 0b01010001)
+        return to_faces(p, 0b01010001, variant=variant)
 
     elif point_type == 0b01101110:
         # 0 1 1 0   1 1 1 0
@@ -8556,7 +8556,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # 0     o
         #
-        return to_faces(p, 0b10010001)
+        return to_faces(p, 0b10010001, variant=variant)
 
     elif point_type == 0b10011110:
         # 1 0 0 1   1 1 1 0
@@ -8566,7 +8566,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     1
         #
-        return to_faces(p, 0b01100001)
+        return to_faces(p, 0b01100001, variant=variant)
 
     elif point_type == 0b01011110:
         # 0 1 0 1   1 1 1 0
@@ -8576,7 +8576,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # 0     o
         #
-        return to_faces(p, 0b10100001)
+        return to_faces(p, 0b10100001, variant=variant)
 
     elif point_type == 0b00111110:
         # 0 0 1 1   1 1 1 0
@@ -8586,7 +8586,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     1
         #
-        return to_faces(p, 0b11000001)
+        return to_faces(p, 0b11000001, variant=variant)
 
     elif point_type == 0b11110001:
         # 1 1 1 1   0 0 0 1
@@ -8596,7 +8596,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     o
         #
-        return to_faces(p, 0b00001110)
+        return to_faces(p, 0b00001110, variant=variant)
 
     elif point_type == 0b11101001:
         # 1 1 1 0   1 0 0 1
@@ -8606,7 +8606,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     o
         #
-        return to_faces(p, 0b00010110)
+        return to_faces(p, 0b00010110, variant=variant)
 
     elif point_type == 0b11011001:
         # 1 1 0 1    1 0 0 1
@@ -8616,7 +8616,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     o
         #
-        return to_faces(p, 0b00100110)
+        return to_faces(p, 0b00100110, variant=variant)
 
     elif point_type == 0b10111001:
         # 1 0 1 1   1 0 0 1
@@ -8626,7 +8626,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     1
         #
-        return to_faces(p, 0b01000110)
+        return to_faces(p, 0b01000110, variant=variant)
 
     elif point_type == 0b01111001:
         # 0 1 1 1   1 0 0 1
@@ -8636,7 +8636,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     o
         #
-        return to_faces(p, 0b10000110)
+        return to_faces(p, 0b10000110, variant=variant)
 
     elif point_type == 0b11100101:
         # 1 1 1 0   0 1 0 1
@@ -8646,7 +8646,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     o
         #
-        return to_faces(p, 0b00011010)
+        return to_faces(p, 0b00011010, variant=variant)
 
     elif point_type == 0b11010101:
         # 1 1 0 1   0 1 0 1
@@ -8656,7 +8656,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     o
         #
-        return to_faces(p, 0b00101010)
+        return to_faces(p, 0b00101010, variant=variant)
 
     elif point_type == 0b10110101:
         # 1 0 1 1   0 1 0 1
@@ -8666,7 +8666,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     1
         #
-        return to_faces(p, 0b01001010)
+        return to_faces(p, 0b01001010, variant=variant)
 
     elif point_type == 0b01110101:
         # 0 1 1 1   0 1 0 1
@@ -8676,7 +8676,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     o
         #
-        return to_faces(p, 0b10001010)
+        return to_faces(p, 0b10001010, variant=variant)
 
     elif point_type == 0b11001101:
         # 1 1 0 0   1 1 0 1
@@ -8686,7 +8686,7 @@ def to_faces(p, point_type, variant=1):
         #   2     3
         # o     o
         #
-        return to_faces(p, 0b00110010)
+        return to_faces(p, 0b00110010, variant=variant)
 
     elif point_type == 0b10101101:
         # 1 0 1 0   1 1 0 1
@@ -8696,7 +8696,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     1
         #
-        return to_faces(p, 0b01010010)
+        return to_faces(p, 0b01010010, variant=variant)
 
     elif point_type == 0b01101101:
         # 0 1 1 0   1 1 0 1
@@ -8706,7 +8706,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # 0     o
         #
-        return to_faces(p, 0b10010010)
+        return to_faces(p, 0b10010010, variant=variant)
 
     elif point_type == 0b10011101:
         # 1 0 0 1   1 1 0 1
@@ -8716,7 +8716,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     1
         #
-        return to_faces(p, 0b01100010)
+        return to_faces(p, 0b01100010, variant=variant)
 
     elif point_type == 0b01011101:
         # 0 1 0 1   1 1 0 1
@@ -8726,7 +8726,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # 0     o
         #
-        return to_faces(p, 0b10100010)
+        return to_faces(p, 0b10100010, variant=variant)
 
     elif point_type == 0b00111101:
         # 0 0 1 1   1 1 0 1
@@ -8736,7 +8736,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     1
         #
-        return to_faces(p, 0b11000010)
+        return to_faces(p, 0b11000010, variant=variant)
 
     elif point_type == 0b11100011:
         # 1 1 1 0   0 0 1 1
@@ -8746,7 +8746,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     o
         #
-        return to_faces(p, 0b00011100)
+        return to_faces(p, 0b00011100, variant=variant)
 
     elif point_type == 0b11010011:
         # 1 1 0 1   0 0 1 1
@@ -8756,7 +8756,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     o
         #
-        return to_faces(p, 0b00101100)
+        return to_faces(p, 0b00101100, variant=variant)
 
     elif point_type == 0b10110011:
         # 1 0 1 1   0 0 1 1
@@ -8766,7 +8766,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     1
         #
-        return to_faces(p, 0b01001100)
+        return to_faces(p, 0b01001100, variant=variant)
 
     elif point_type == 0b01110011:
         # 0 1 1 1   0 0 1 1
@@ -8776,7 +8776,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     o
         #
-        return to_faces(p, 0b10001100)
+        return to_faces(p, 0b10001100, variant=variant)
 
     elif point_type == 0b11001011:
         # 1 1 0 0   1 0 1 1
@@ -8786,7 +8786,7 @@ def to_faces(p, point_type, variant=1):
         #   2     3
         # o     o
         #
-        return to_faces(p, 0b00110100)
+        return to_faces(p, 0b00110100, variant=variant)
 
     elif point_type == 0b10101011:
         # 1 0 1 0   1 0 1 1
@@ -8796,7 +8796,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     1
         #
-        return to_faces(p, 0b01010100)
+        return to_faces(p, 0b01010100, variant=variant)
 
     elif point_type == 0b01101011:
         # 0 1 1 0   1 0 1 1
@@ -8806,7 +8806,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # 0     o
         #
-        return to_faces(p, 0b10010100)
+        return to_faces(p, 0b10010100, variant=variant)
 
     elif point_type == 0b10011011:
         # 1 0 0 1   1 0 1 1
@@ -8816,7 +8816,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     1
         #
-        return to_faces(p, 0b01100100)
+        return to_faces(p, 0b01100100, variant=variant)
 
     elif point_type == 0b01011011:
         # 0 1 0 1   1 0 1 1
@@ -8826,7 +8826,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # 0     o
         #
-        return to_faces(p, 0b10100100)
+        return to_faces(p, 0b10100100, variant=variant)
 
     elif point_type == 0b00111011:
         # 0 0 1 1   1 0 1 1
@@ -8836,7 +8836,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     1
         #
-        return to_faces(p, 0b11000100)
+        return to_faces(p, 0b11000100, variant=variant)
 
     elif point_type == 0b11000111:
         # 1 1 0 0   0 1 1 1
@@ -8846,7 +8846,7 @@ def to_faces(p, point_type, variant=1):
         #   2     3
         # o     o
         #
-        return to_faces(p, 0b00111000)
+        return to_faces(p, 0b00111000, variant=variant)
 
     elif point_type == 0b10100111:
         # 1 0 1 0   0 1 1 1
@@ -8856,7 +8856,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     1
         #
-        return to_faces(p, 0b01011000)
+        return to_faces(p, 0b01011000, variant=variant)
 
     elif point_type == 0b01100111:
         # 0 1 1 0   0 1 1 1
@@ -8866,7 +8866,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # 0     o
         #
-        return to_faces(p, 0b10011000)
+        return to_faces(p, 0b10011000, variant=variant)
 
     elif point_type == 0b10010111:
         # 1 0 0 1   0 1 1 1
@@ -8876,7 +8876,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     1
         #
-        return to_faces(p, 0b01101000)
+        return to_faces(p, 0b01101000, variant=variant)
 
     elif point_type == 0b01010111:
         # 0 1 0 1   0 1 1 1
@@ -8886,7 +8886,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # 0     o
         #
-        return to_faces(p, 0b10101000)
+        return to_faces(p, 0b10101000, variant=variant)
 
     elif point_type == 0b00110111:
         # 0 0 1 1   0 1 1 1
@@ -8896,7 +8896,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     1
         #
-        return to_faces(p, 0b11001000)
+        return to_faces(p, 0b11001000, variant=variant)
 
     elif point_type == 0b10001111:
         # 1 0 0 0   1 1 1 1
@@ -8906,7 +8906,7 @@ def to_faces(p, point_type, variant=1):
         #   2     3
         # o     1
         #
-        return to_faces(p, 0b01110000)
+        return to_faces(p, 0b01110000, variant=variant)
 
     elif point_type == 0b01001111:
         # 0 1 0 0   1 1 1 1
@@ -8916,7 +8916,7 @@ def to_faces(p, point_type, variant=1):
         #   2     3
         # 0     o
         #
-        return to_faces(p, 0b10110000)
+        return to_faces(p, 0b10110000, variant=variant)
 
     elif point_type == 0b00101111:
         # 0 0 1 0   1 1 1 1
@@ -8926,7 +8926,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # 0     1
         #
-        return to_faces(p, 0b11010000)
+        return to_faces(p, 0b11010000, variant=variant)
 
     elif point_type == 0b00011111:
         # 0 0 0 1   1 1 1 1
@@ -8936,7 +8936,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # 0     1
         #
-        return to_faces(p, 0b11100000)
+        return to_faces(p, 0b11100000, variant=variant)
 
     elif point_type == 0b11111100:
         # 1 1 1 1   1 1 0 0
@@ -8946,7 +8946,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     o
         #
-        return to_faces(p, 0b00000011)
+        return to_faces(p, 0b00000011, variant=variant)
 
     elif point_type == 0b11111010:
         # 1 1 1 1   1 0 1 0
@@ -8956,7 +8956,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     o
         #
-        return to_faces(p, 0b00000101)
+        return to_faces(p, 0b00000101, variant=variant)
 
     elif point_type == 0b11110110:
         # 1 1 1 1   0 1 1 0
@@ -8966,7 +8966,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     o
         #
-        return to_faces(p, 0b00001001)
+        return to_faces(p, 0b00001001, variant=variant)
 
     elif point_type == 0b11101110:
         # 1 1 1 0   1 1 1 0
@@ -8976,7 +8976,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     o
         #
-        return to_faces(p, 0b00010001)
+        return to_faces(p, 0b00010001, variant=variant)
 
     elif point_type == 0b11011110:
         # 1 1 0 1   1 1 1 0
@@ -8986,7 +8986,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     o
         #
-        return to_faces(p, 0b00100001)
+        return to_faces(p, 0b00100001, variant=variant)
 
     elif point_type == 0b10111110:
         # 1 0 1 1   1 1 1 0
@@ -8996,7 +8996,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     1
         #
-        return to_faces(p, 0b01000001)
+        return to_faces(p, 0b01000001, variant=variant)
 
     elif point_type == 0b01111110:
         # 0 1 1 1   1 1 1 0
@@ -9006,7 +9006,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     o
         #
-        return to_faces(p, 0b10000001)
+        return to_faces(p, 0b10000001, variant=variant)
 
     elif point_type == 0b11111001:
         # 1 1 1 1   1 0 0 1
@@ -9016,7 +9016,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     o
         #
-        return to_faces(p, 0b00000110)
+        return to_faces(p, 0b00000110, variant=variant)
 
     elif point_type == 0b11110101:
         # 1 1 1 1   0 1 0 1
@@ -9026,7 +9026,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     o
         #
-        return to_faces(p, 0b00001010)
+        return to_faces(p, 0b00001010, variant=variant)
 
     elif point_type == 0b11101101:
         # 1 1 1 0   1 1 0 1
@@ -9036,7 +9036,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     o
         #
-        return to_faces(p, 0b00010010)
+        return to_faces(p, 0b00010010, variant=variant)
 
     elif point_type == 0b11011101:
         # 1 1 0 1   1 1 0 1
@@ -9046,7 +9046,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     o
         #
-        return to_faces(p, 0b00100010)
+        return to_faces(p, 0b00100010, variant=variant)
 
     elif point_type == 0b10111101:
         # 1 0 1 1   1 1 0 1
@@ -9056,7 +9056,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     1
         #
-        return to_faces(p, 0b01000010)
+        return to_faces(p, 0b01000010, variant=variant)
 
     elif point_type == 0b01111101:
         # 0 1 1 1   1 1 0 1
@@ -9066,7 +9066,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     o
         #
-        return to_faces(p, 0b10000010)
+        return to_faces(p, 0b10000010, variant=variant)
 
     elif point_type == 0b11110011:
         # 1 1 1 1   0 0 1 1
@@ -9076,7 +9076,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     o
         #
-        return to_faces(p, 0b00001100)
+        return to_faces(p, 0b00001100, variant=variant)
 
     elif point_type == 0b11101011:
         # 1 1 1 0   1 0 1 1
@@ -9086,7 +9086,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     o
         #
-        return to_faces(p, 0b00010100)
+        return to_faces(p, 0b00010100, variant=variant)
 
     elif point_type == 0b11011011:
         # 1 1 0 1   1 0 1 1
@@ -9096,7 +9096,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     o
         #
-        return to_faces(p, 0b00100100)
+        return to_faces(p, 0b00100100, variant=variant)
 
     elif point_type == 0b10111011:
         # 1 0 1 1   1 0 1 1
@@ -9106,7 +9106,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     1
         #
-        return to_faces(p, 0b01000100)
+        return to_faces(p, 0b01000100, variant=variant)
 
     elif point_type == 0b01111011:
         # 0 1 1 1   1 0 1 1
@@ -9116,7 +9116,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     o
         #
-        return to_faces(p, 0b10000100)
+        return to_faces(p, 0b10000100, variant=variant)
 
     elif point_type == 0b11100111:
         # 1 1 1 0   0 1 1 1
@@ -9126,7 +9126,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     o
         #
-        return to_faces(p, 0b00011000)
+        return to_faces(p, 0b00011000, variant=variant)
 
     elif point_type == 0b11010111:
         # 1 1 0 1   0 1 1 1
@@ -9136,7 +9136,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     o
         #
-        return to_faces(p, 0b00101000)
+        return to_faces(p, 0b00101000, variant=variant)
 
     elif point_type == 0b10110111:
         # 1 0 1 1   0 1 1 1
@@ -9146,7 +9146,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     1
         #
-        return to_faces(p, 0b01001000)
+        return to_faces(p, 0b01001000, variant=variant)
 
     elif point_type == 0b01110111:
         # 0 1 1 1   0 1 1 1
@@ -9156,7 +9156,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     o
         #
-        return to_faces(p, 0b10001000)
+        return to_faces(p, 0b10001000, variant=variant)
 
     elif point_type == 0b11001111:
         # 1 1 0 0   1 1 1 1
@@ -9166,7 +9166,7 @@ def to_faces(p, point_type, variant=1):
         #   2     3
         # o     o
         #
-        return to_faces(p, 0b00110000)
+        return to_faces(p, 0b00110000, variant=variant)
 
     elif point_type == 0b10101111:
         # 1 0 1 0   1 1 1 1
@@ -9176,7 +9176,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     1
         #
-        return to_faces(p, 0b01010000)
+        return to_faces(p, 0b01010000, variant=variant)
 
     elif point_type == 0b01101111:
         # 0 1 1 0   1 1 1 1
@@ -9186,7 +9186,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # 0     o
         #
-        return to_faces(p, 0b10010000)
+        return to_faces(p, 0b10010000, variant=variant)
 
     elif point_type == 0b10011111:
         # 1 0 0 1   1 1 1 1
@@ -9196,7 +9196,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     1
         #
-        return to_faces(p, 0b01100000)
+        return to_faces(p, 0b01100000, variant=variant)
 
     elif point_type == 0b01011111:
         # 0 1 0 1   1 1 1 1
@@ -9206,7 +9206,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # 0     o
         #
-        return to_faces(p, 0b10100000)
+        return to_faces(p, 0b10100000, variant=variant)
 
     elif point_type == 0b00111111:
         # 0 0 1 1   1 1 1 1
@@ -9216,7 +9216,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     1
         #
-        return to_faces(p, 0b11000000)
+        return to_faces(p, 0b11000000, variant=variant)
 
     elif point_type == 0b11111110:
         # 1 1 1 1   1 1 1 0
@@ -9226,7 +9226,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     o
         #
-        return to_faces(p, 0b00000001)
+        return to_faces(p, 0b00000001, variant=variant)
 
     elif point_type == 0b11111101:
         # 1 1 1 1   1 1 0 1
@@ -9236,7 +9236,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     o
         #
-        return to_faces(p, 0b00000010)
+        return to_faces(p, 0b00000010, variant=variant)
 
     elif point_type == 0b11111011:
         # 1 1 1 1   1 0 1 1
@@ -9246,7 +9246,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     o
         #
-        return to_faces(p, 0b00000100)
+        return to_faces(p, 0b00000100, variant=variant)
 
     elif point_type == 0b11110111:
         # 1 1 1 1   0 1 1 1
@@ -9256,7 +9256,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     o
         #
-        return to_faces(p, 0b00001000)
+        return to_faces(p, 0b00001000, variant=variant)
 
     elif point_type == 0b11101111:
         # 1 1 1 0   1 1 1 1
@@ -9266,7 +9266,7 @@ def to_faces(p, point_type, variant=1):
         #   o     3
         # o     o
         #
-        return to_faces(p, 0b00010000)
+        return to_faces(p, 0b00010000, variant=variant)
 
     elif point_type == 0b11011111:
         # 1 1 0 1   1 1 1 1
@@ -9276,7 +9276,7 @@ def to_faces(p, point_type, variant=1):
         #   2     o
         # o     o
         #
-        return to_faces(p, 0b00100000)
+        return to_faces(p, 0b00100000, variant=variant)
 
     elif point_type == 0b10111111:
         # 1 0 1 1   1 1 1 1
@@ -9286,7 +9286,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # o     1
         #
-        return to_faces(p, 0b01000000)
+        return to_faces(p, 0b01000000, variant=variant)
 
     elif point_type == 0b01111111:
         # 0 1 1 1   1 1 1 1
@@ -9296,7 +9296,7 @@ def to_faces(p, point_type, variant=1):
         #   o     o
         # 0     o
         #
-        return to_faces(p, 0b10000000)
+        return to_faces(p, 0b10000000, variant=variant)
 
     elif point_type == 0b11111111:
         return []
