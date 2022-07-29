@@ -1184,8 +1184,8 @@ def to_points(p, point_type, variant=1):
         p1 = __mid_point(p[2], p[3])
         p2 = __mid_point(p[0], p[4])
         p3 = __mid_point(p[1], p[5])
-        p4 = __mid_point(p[4], p[5])
-        p5 = __mid_point(p[3], p[7])
+        p4 = __mid_point(p[3], p[7])
+        p5 = __mid_point(p[4], p[5])
         p6 = __mid_point(p[4], p[6])
 
         return [p0, p1, p2, p3, p4, p5, p6]
