@@ -5818,8 +5818,8 @@ def to_faces(p, point_type, variant=1):
         #
         return [
             3, p[0], p[1], p[3],
-            3, p[1], p[3], p[5],
-            3, p[2], p[4], p[6],
+            3, p[1], p[3], p[4],
+            3, p[2], p[5], p[6],
         ]
 
     elif point_type == 0b00111000:
