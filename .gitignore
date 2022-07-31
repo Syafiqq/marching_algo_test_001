@@ -3,3 +3,9 @@
 !/objs/.gitkeep
 /dump
 !/dump/.gitkeep
+/images
+!/images/oas-dump/.gitkeep
+/marching-algorithm-3d-rules-ground-truth
+!/marching_algorithm_3d_rules_ground_truth/.gitkeep
+/marching-algorithm-3d-rules-ground-truth-stl
+!/marching_algorithm_3d_rules_ground_truth-stl/.gitkeep
