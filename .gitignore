@@ -9,3 +9,5 @@
 !/marching_algorithm_3d_rules_ground_truth/.gitkeep
 /marching-algorithm-3d-rules-ground-truth-stl
 !/marching_algorithm_3d_rules_ground_truth-stl/.gitkeep
+/marching_algorithm_3d_rules_compacter
+!/marching_algorithm_3d_rules_compacter/.gitkeep
