@@ -24,5 +24,12 @@ def main(input_path, output_path):
     load(input_path, output_path)
 
 
+def example_load_stag_beetle():
+    main(
+        '../objs/stagbeetle208x208x123.dat',
+        '/tmp/stagbeetle208x208x123.csv'
+    )
+
+
 if __name__ == "__main__":
     pass
