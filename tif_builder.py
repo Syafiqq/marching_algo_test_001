@@ -1,7 +1,6 @@
 from pathlib import Path
 import numpy as np
 import cv2
-import os
 
 
 def build(values: [int], x_size: int, y_size: int, include_zero: bool, path: str):
@@ -27,6 +26,25 @@ def build(values: [int], x_size: int, y_size: int, include_zero: bool, path: str
         im = np.array(values[i], dtype=np.uint8)
         gray_img = cv2.cvtColor(im, cv2.COLOR_GRAY2BGR)
         cv2.imwrite(str(path / f'{i}.tif'), gray_img)
+
+
+def example_tif_builder():
+    build(
+        [
+            0, 2, 3,
+            4, 5, 6,
+
+            7, 8, 9,
+            10, 11, 12,
+
+            13, 14, 15,
+            16, 17, 18
+        ],
+        3,
+        2,
+        False,
+        'objs/tif_builder_test'
+    )
 
 
 if __name__ == "__main__":
