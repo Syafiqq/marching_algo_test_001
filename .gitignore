@@ -6,6 +6,7 @@
 /images
 !/images/oas-dump/.gitkeep
 !/images/bunny/.gitkeep
+!/images/mrbrain/.gitkeep
 /marching-algorithm-3d-rules-ground-truth
 !/marching_algorithm_3d_rules_ground_truth/.gitkeep
 /marching-algorithm-3d-rules-ground-truth-stl
